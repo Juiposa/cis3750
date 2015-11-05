@@ -43,7 +43,7 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
+  background-color: orange;
 }
 a:active,
 a:hover {
@@ -64,8 +64,8 @@ h1 {
   font-size: 2em;
 }
 mark {
-  color: #000;
-  background: #ff0;
+  color: orange;
+  background: orange;
 }
 small {
   font-size: 80%;
