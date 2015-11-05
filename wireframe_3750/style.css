@@ -5,6 +5,7 @@
 	background:orange;
 }
 
+/*page header styles*/
 #header{
 	position:relative;
 	width:80%;
@@ -59,4 +60,15 @@
 	background:black;
 	padding:8px;
 	height:90px;
+}
+
+/*invitation pages style*/
+
+table#inv_table {
+	border: 3px solid black;
+	margin: auto;
+	width: 80%;
+	text-align: center;
+	position: relative;
+	background: grey;
 }
