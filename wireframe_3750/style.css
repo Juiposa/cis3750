@@ -72,3 +72,19 @@ table#inv_table {
 	position: relative;
 	background: grey;
 }
+
+th {
+	background-color: #333333;
+	color: white;
+}
+
+td {
+	background-color: white;
+}
+
+button {
+	margin: 2%;
+	width: 85%;
+	background-color: grey; 
+	border-radius: 6px;
+}
