@@ -83,7 +83,34 @@
 	padding:12px;
 	height:90px;
 }
-
+#twlogo,#fblogo{
+	height:30px;
+}
+#search{
+	height:30px;
+	width:120px;
+	font-size:16px;
+	background:black;
+	color:orange;
+	border:solid orange 2px;
+	border-radius:8px;
+	padding-left:5px;
+}
+#goBtn{
+	height:30px;
+	width:35px;
+	font-size:18px;
+	background:black;
+	color:black;
+	font-weight:bold;
+	background:orange;
+}
+#donateLink{
+	font-weight:bold;
+	color:orange;
+	text-decoration:none;
+	background:black;
+}
 .infoTable{
 	padding:10px;
 	width:100%;
@@ -94,6 +121,18 @@
 	background:grey;
 	width:50%;
 }
+.topTable{
+	background:black;
+	width:100%;
+	margin-top:-5px;
+}
+.topTable td{
+	background:black;
+	color:white;
+	padding:3px;
+}
+
+
 /* "route_create.html" styling START */
 #createMap{
 	border-radius:5px;
@@ -145,14 +184,7 @@
 .bubbleCell,.sizeCell{
 	text-align:center;
 }
-.topTable{
-	background:black;
-	width:100%;
-}
-.topTable td{
-	background:black;
-	color:white;
-}
+
 #loginTable{
 	margin:0 auto;
 	margin-top:-8px;

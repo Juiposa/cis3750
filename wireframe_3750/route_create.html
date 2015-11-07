@@ -1,12 +1,7 @@
-<!--
+	<!--
 $('#result').load('ajax/test.html #container');
 -->
 
-
-<!-- 
-create make route
-create select route
--->
 
 <html>
 	<header>
@@ -19,7 +14,25 @@ create select route
 
 		<div id="webHeader">
 			<div id="top">
-				<img id="logo1" src="pics/logo1.png" />
+				<table class="topTable">
+					<tr>
+						<td width="70%"> <img id="logo1" src="pics/logo1.png" /> </td>
+						<td width="30%">
+							<table class="topTable">
+								<tr>
+									<td style="text-align:right;"> <input type="text" id="search" value="Search..."> </a> </td>
+									<td style="text-align:center;"> <button id="goBtn" type="button">&#10150;</button> </td>
+									<td style="text-align:center;"> <a href="#"> <img id="fblogo" src="pics/fblogo.png" /> </a> </td>
+								</tr>
+								<tr>
+									<td colspan="2" style="text-align:right;"> <a id="donateLink" href="#">DONATE</a> </td>
+									<td style="text-align:center;"> <a href="#"> <img id="twlogo" src="pics/twlogo.png" /> </td>
+								</tr>
+							</table>
+						
+						</td>
+					</tr>
+				</table>
 			</div>
 			<ul id="menu">
 				<li id="homeLink">HOME</li>

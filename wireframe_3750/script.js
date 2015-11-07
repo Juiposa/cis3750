@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	var admin = true; /* admin is logged in when TRUE */
 	
+	document.getElementById("search").onclick=function(){
+		document.getElementById("search").value="";
+	};
+	
 	document.getElementById("loginLink").onmouseover=function(){
 		document.getElementById("arrowPic").src="pics/arroworange.png";
 		document.getElementById("loginTable").style.backgroundColor = "orange";
