@@ -1,0 +1,126 @@
+<!--
+$('#result').load('ajax/test.html #container');
+-->
+
+
+<!-- 
+create make route
+create select route
+-->
+
+<html>
+	<header>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+		<link href="style.css" rel="stylesheet">
+	</header>
+	
+	<body>
+
+		<div id="webHeader">
+			<div id="top">
+				<img id="logo1" src="pics/logo1.png" />
+			</div>
+			<ul id="menu">
+				<li id="homeLink">HOME</li>
+				<li id="aboutLink">ABOUT</li>
+				<li id="contactLink">CONTACT</li>
+				<li id="registerLink">REGISTER</li>
+				<li>
+					<table style="margin:0 auto;margin-top:-8px;background:white;color:orange;">
+						<tr>
+							<td style="padding-top:5px;background:white;">LOG IN</td>
+							<td style="padding-left:10px;background:white;"><img id="arrowPic" src="pics/arrow.png" /></td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="createRoute">
+			<table style="padding:15px;" class="infoTable">
+				<tr width="550px">
+					<td> <img id="createMap" src="pics/guelphMapWithRoutes.png" /> </td>
+					<td>
+						<!-- route name, colour, type, number of people, accessible -->
+						<table id="routeTable">
+							<caption>EXISTING ROUTES</caption>
+							<th width="25%"></th>
+							<th width="15%"></th>
+							<th width="15%"></th>
+							<th width="15%"></th>
+							<th width="30%"></th>
+							<tr>
+								<td class="routeCell">Route 5</td>
+								<td class="bubbleCell"><div class="bubble" style="background:red;"></div></td>
+								<td class="typeCell">TYPE</td>
+								<td class="sizeCell">10</td>
+								<td class="accCell">Accessible</td>
+							</tr>
+							<tr>
+								<td class="routeCell">Route 6</td>
+								<td class="bubbleCell"><div class="bubble" style="background:blue;"></div></td>
+								<td class="typeCell">TYPE</td>
+								<td class="sizeCell">10</td>
+								<td class="accCell">Accessible</td>
+							</tr>
+							<tr>
+								<td class="routeCell">Route 8</td>
+								<td class="bubbleCell"><div class="bubble" style="background:green;"></div></td>
+								<td class="typeCell">TYPE</td>
+								<td class="sizeCell">15</td>
+								<td class="accCell">Accessible</td>
+							</tr>
+							<tr>
+								<td class="routeCell">Route 10</td>
+								<td class="bubbleCell" width="50px"><div class="bubble" style="background:yellow;"></div></td>
+								<td class="typeCell">TYPE</td>
+								<td class="sizeCell">8</td>
+								<td class="accCell">Non-Accessible</td>
+							</tr>
+							<tr>
+								<td class="routeCell">Route 11</td>
+								<td class="bubbleCell" width="50px"><div class="bubble" style="background:brown;"></div></td>
+								<td class="typeCell">TYPE</td>
+								<td class="sizeCell">20</td>
+								<td class="accCell">Non-Accessible</td>
+							</tr>							
+							<tr>
+								<td class="routeCell">Route 15</td>
+								<td class="bubbleCell"><div class="bubble" style="background:purple;"></div></td>
+								<td class="typeCell">TYPE</td>
+								<td class="sizeCell">12</td>
+								<td class="accCell">Accessible</td>
+							</tr>										
+						</table>
+					
+					</td>
+				</tr>	
+				<tr>
+					<td colspan="2">
+						<table id="createTable">
+							<tr>
+								<td>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+		<div id="footer">
+			
+			
+		</div>
+	
+	
+	</body>
+
+
+
+
+
+</html>
+
