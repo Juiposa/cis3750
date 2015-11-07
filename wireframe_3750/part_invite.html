@@ -1,3 +1,5 @@
+<!-- JEFF, I updated this page for you -Dan -->
+
 <html>
 	<header>
  		<!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
@@ -8,22 +10,53 @@
 	</header>
 	
 	<body>
-
-		<div id="header">
+		<div id="webHeader">
 			<div id="top">
-				<img id="logo1" src="pics/logo1.png" />
+				<table class="topTable">
+					<tr>
+						<td width="70%"> <img id="logo1" src="pics/logo1.png" /> </td>
+						<td width="30%">
+							<table class="topTable">
+								<tr>
+									<td>FB LINK</td>
+									<td>SEARCH BAR</td>
+								</tr>
+								<tr>
+									<td>TWITTER LINK</td>
+									<td>DONATE LINK</td>
+								</tr>
+							</table>
+						
+						</td>
+					</tr>
+				</table>
 			</div>
 			<ul id="menu">
 				<li id="homeLink">HOME</li>
 				<li id="aboutLink">ABOUT</li>
 				<li id="contactLink">CONTACT</li>
-				<li>
-					<table style="margin:0 auto;margin-top:-8px;background:white;color:orange;">
+				<li id="registerLink">REGISTER</li>
+				<li id="loginLink">
+					<table id="loginTable">
 						<tr>
-							<td style="padding-top:5px;background:white;">LOG IN</td>
-							<td style="padding-left:10px;background:white;"><img id="arrowPic" src="pics/arrow.png" /></td>
+							<td id="logTableCol1" style="padding-top:5px;background:beige;">LOG IN</td>
+							<td id="logTableCol2" style="padding-left:10px;background:beige;"><img id="arrowPic" src="pics/arrow.png" /></td>
 						</tr>
 					</table>
+					
+					<ul id="adminMenu">
+						<li>MANAGE ROUTES</li>
+						<li>MANAGE TEAMS</li>
+						<li>MANAGE PART.</li>
+						<li>LIVE CHAT</li>
+						<li style="border-radius:0px 0px 10px 10px;">LOG OUT</li>
+					</ul>
+					
+					<ul id="partMenu">
+						<li>PROFILE</li>
+						<li>TEAM</li>
+						<li style="border-radius:0px 0px 10px 10px;">LOG OUT</li>
+					</ul>					
 				</li>
 			</ul>
 		</div>
