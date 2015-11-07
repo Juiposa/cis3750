@@ -1,0 +1,11 @@
+1. Login - Bashir
+2. Create a team  - Stephen
+3. Invite people to the team - Jeff
+4. Select route - Dan
+5. Delete the team - Stephen
+6. Logout - Bashir
+7. Login as admin - Bashir
+8. Create route - Dan
+9. Delete route - Jeff
+10. Logout - Bashir
+
