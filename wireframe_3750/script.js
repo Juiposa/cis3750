@@ -8,7 +8,7 @@ $(document).ready(function(){
 	document.getElementById("loginLink").onmouseover=function(){
 		document.getElementById("arrowPic").src="pics/arroworange.png";
 		document.getElementById("loginTable").style.backgroundColor = "orange";
-		document.getElementById("loginTable").style.color = "white";
+		document.getElementById("loginTable").style.color = "beige";
 		document.getElementById("logTableCol1").style.backgroundColor = "orange";
 		document.getElementById("logTableCol2").style.backgroundColor = "orange";
 		

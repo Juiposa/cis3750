@@ -39,30 +39,44 @@ $('#result').load('ajax/test.html #container');
 				<li id="aboutLink">ABOUT</li>
 				<li id="contactLink">CONTACT</li>
 				<li id="registerLink">REGISTER</li>
-				<li>
-					<table style="margin:0 auto;margin-top:-8px;background:white;color:orange;">
+				<li id="loginLink">
+					<table id="loginTable">
 						<tr>
-							<td style="padding-top:5px;background:white;">LOG IN</td>
-							<td style="padding-left:10px;background:white;"><img id="arrowPic" src="pics/arrow.png" /></td>
+							<td id="logTableCol1" style="padding-top:5px;background:beige;">LOG IN</td>
+							<td id="logTableCol2" style="padding-left:10px;background:beige;"><img id="arrowPic" src="pics/arrow.png" /></td>
 						</tr>
 					</table>
+					
+					<ul id="adminMenu">
+						<li>MANAGE ROUTES</li>
+						<li>MANAGE TEAMS</li>
+						<li>MANAGE PART.</li>
+						<li>LIVE CHAT</li>
+						<li style="border-radius:0px 0px 10px 10px;">LOG OUT</li>
+					</ul>
+					
+					<ul id="partMenu">
+						<li>PROFILE</li>
+						<li>TEAM</li>
+						<li style="border-radius:0px 0px 10px 10px;">LOG OUT</li>
+					</ul>					
 				</li>
 			</ul>
 		</div>
 		
 		<div id="createRoute">
-			<table style="padding:15px;" class="infoTable">
-				<tr width="550px">
-					<td> <img id="createMap" src="pics/guelphMapWithRoutes.png" /> </td>
-					<td>
+			<table class="infoTable" style="padding:15px;">
+				<tr>
+					<td style="text-align:center;"> <img id="createMap" src="pics/guelphMapWithRoutes.png" /> </td>
+					<td valign="top">
 						<!-- route name, colour, type, number of people, accessible -->
 						<table id="routeTable">
 							<caption>EXISTING ROUTES</caption>
-							<th width="25%"></th>
+							<th width="20%"></th>
 							<th width="15%"></th>
 							<th width="15%"></th>
 							<th width="15%"></th>
-							<th width="30%"></th>
+							<th width="35%"></th>
 							<tr>
 								<td class="routeCell">Route 5</td>
 								<td class="bubbleCell"><div class="bubble" style="background:red;"></div></td>
