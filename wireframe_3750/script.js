@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	var admin = true; /* admin is logged in when TRUE */
+
+	var invites =  0; //total number of people the team captain has invited
 	
 	document.getElementById("search").onclick=function(){
 		document.getElementById("search").value="";
@@ -49,5 +51,17 @@ $(document).ready(function(){
 	document.getElementById("registerLink").onclick=function(){
 		window.location.href = "under_construction.html";
 	};
+
+
+	//invite page stuff
+	$('.btn-default').on('click', function (){
+		if (invites < 4) {
+			$(this).text("Invited");
+			invites++;
+		} else {
+			//popup indicating max number of participants invited has been reached
+			//NOOP for now
+		}
+	});
 
 });
