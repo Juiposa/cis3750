@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	var admin = true; /* admin is logged in when TRUE */
+	var admin = false; /* admin is logged in when TRUE */
+	var part = false;
 	
 	document.getElementById("search").onclick=function(){
 		document.getElementById("search").value="";
