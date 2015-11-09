@@ -47,7 +47,7 @@ $(document).ready(function(){
 		window.location.href = "contact.html";
 	};
 	document.getElementById("registerLink").onclick=function(){
-		window.location.href = "register.html";
+		window.location.href = "under_construction.html";
 	};
 
 });

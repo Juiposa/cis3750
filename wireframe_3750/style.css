@@ -189,7 +189,7 @@
 
 /* "route_create.html" styling END */
 
-/*invitation pages style*/
+/* "part_invite.html" style */
 
 table#inv_table {
 	border: 3px solid black;
@@ -200,12 +200,12 @@ table#inv_table {
 	background: grey;
 }
 
-th {
+#inv_table th {
 	background-color: #333333;
 	color: white;
 }
 
-td {
+#inv_table td {
 	background-color: white;
 }
 
@@ -215,3 +215,15 @@ button {
 	background-color: grey; 
 	border-radius: 6px;
 }
+
+/* "part_invite.html" style END */
+
+/* "under_construction.html" style */
+
+#underconstruction {
+	margin-top: 30px;
+	text-align: center;
+	background-color: grey;
+}
+
+/* "under_construction.html" style */
