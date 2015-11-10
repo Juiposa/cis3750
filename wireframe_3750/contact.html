@@ -1,8 +1,8 @@
 <html>
 	<header>
-		<link href="style.css" rel="stylesheet">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="script.js"></script>
+		<link href="style.css" rel="stylesheet">
 	</header>
 	
 	<body>
@@ -15,13 +15,13 @@
 						<td width="30%">
 							<table class="topTable">
 								<tr>
-									<td style="text-align:right;"> <input type="text" id="search" value="Search..."> </a> </td>
-									<td style="text-align:center;"> <button id="goBtn" type="button">&#10150;</button> </td>
+									<td style="text-align:right;"> <input type="text" id="search" value="Search..."> </td>
+									<td style="text-align:center;"> <button id="goBtn" type="button">&#10150;</button> </td>								
+									<td style="text-align:right;">  <div id="donateDiv"> <a id="donateLink" href="#"> DONATE </a> </div> </td>
 									<td style="text-align:center;"> <a href="#"> <img id="fblogo" src="pics/fblogo.png" /> </a> </td>
 								</tr>
 								<tr>
-									<td colspan="2" style="text-align:right;"> <a id="donateLink" href="#">DONATE</a> </td>
-									<td style="text-align:center;"> <a href="#"> <img id="twlogo" src="pics/twlogo.png" /> </td>
+									<td colspan="4" style="text-align:right;"> <a href="#"> <img id="twlogo" src="pics/twlogo.png" /> </a> </td>
 								</tr>
 							</table>
 						
@@ -58,6 +58,8 @@
 				</li>
 			</ul>
 		</div>
+		
+		
 		<div id="main">
 			<table class="infoTable">
 				<tr>
@@ -66,13 +68,32 @@
 				</tr>		
 			
 			</table>
+		</div>
 		
-		</div>
 		<div id="footer">
+			<table id="footerTable">
+				<tr>
+					<td valign="top"> 
+						<ul class="footerList">
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="under_construction.html">Register Now</a></li>
+							<li><a href="under_construction.html">FAQ</a></li>
+						</ul>
+					</td>
+					<td valign="top"> 
+						<ul class="footerList">
+							<li><a href="under_construction.html">Donate</a></li>
+							<li><a href="#">Facebook Page</a></li>
+							<li><a href="#">Twitter Page</a></li>
+						</ul>
+					</td>		
+				<tr>
 			
+			</table>
 			
 		</div>
-	
+
 	
 	</body>
 

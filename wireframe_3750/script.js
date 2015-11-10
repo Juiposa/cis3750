@@ -1,7 +1,23 @@
 $(document).ready(function(){
-	var admin = false; /* admin is logged in when TRUE */
+
+	var admin = true; /* admin is logged in when TRUE */
 	var part = false;
+	var invites =  0; //total number of people the team captain has invited
 	
+	updateLogin(); //call this once the user has logged in 
+	
+	function updateLogin(){
+		if(admin==true){
+			document.getElementById("logTableCol1").innerHTML="ADMIN";
+		}
+		else if(part == true){
+			document.getElementById("logTableCol1").innerHTML="PARTICIPANT";
+		}
+		else{
+			document.getElementById("logTableCol1").innerHTML="LOG IN";
+		}
+	}
+
 	document.getElementById("search").onclick=function(){
 		document.getElementById("search").value="";
 	};
@@ -48,7 +64,19 @@ $(document).ready(function(){
 		window.location.href = "contact.html";
 	};
 	document.getElementById("registerLink").onclick=function(){
-		window.location.href = "register.html";
+		window.location.href = "under_construction.html";
 	};
+
+
+	//invite page stuff
+	$('.btn-default').on('click', function (){
+		if (invites < 4) {
+			$(this).text("Invited");
+			invites++;
+		} else {
+			//popup indicating max number of participants invited has been reached
+			//NOOP for now
+		}
+	});
 
 });
