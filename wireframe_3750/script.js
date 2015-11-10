@@ -1,8 +1,9 @@
+//last bash version
 $(document).ready(function(){
-	var admin = true; /* admin is logged in when TRUE */
+	var admin=true; /* admin is logged in when TRUE */
+	var participant;
 
 	var invites =  0; //total number of people the team captain has invited
-	
 	document.getElementById("search").onclick=function(){
 		document.getElementById("search").value="";
 	};
@@ -14,11 +15,15 @@ $(document).ready(function(){
 		document.getElementById("logTableCol1").style.backgroundColor = "orange";
 		document.getElementById("logTableCol2").style.backgroundColor = "orange";
 		
+
 		if(admin==true){
 			document.getElementById("adminMenu").style.display="block";
 		}
 		else {
 			document.getElementById("partMenu").style.display="block";
+
+
+
 		}
 	};
 	
@@ -28,6 +33,7 @@ $(document).ready(function(){
 		document.getElementById("loginTable").style.color = "orange";
 		document.getElementById("logTableCol1").style.backgroundColor = "beige";
 		document.getElementById("logTableCol2").style.backgroundColor = "beige";
+
 		
 		if(admin==true){
 			document.getElementById("adminMenu").style.display="none";
@@ -36,7 +42,12 @@ $(document).ready(function(){
 			document.getElementById("partMenu").style.display="none";
 		}	
 	};
-	
+
+		
+	document.getElementById("loginLink").onclick=function(){
+		window.location.href = "login.html";
+	};
+
 
 	
 	document.getElementById("aboutLink").onclick=function(){
@@ -63,5 +74,46 @@ $(document).ready(function(){
 			//NOOP for now
 		}
 	});
+	document.getElementById("loginButton").onclick=function(){
+		handleLogin (admin,participant);
+	};
 
+	document.getElementById("cancelButton").onclick=function(){
+		window.location.href="index.html"
+	};
 });
+function handleLogin (admin) {
+	
+	usernameValue= document.getElementById('username').value  ;
+	passwordValue=document.getElementById('password').value;
+	if (usernameValue.length <1 || passwordValue.length <1) {
+		alert ("Missing username or password, please re-enter");
+	}
+	// else if (passwordValue.length <6 && passwordValue.length >=1){
+	// 	alert ("Password is too short, please enter a password longer th");
+	// }
+	if (!document.getElementById('admin').checked && !document.getElementById('part').checked ){
+		alert ("Please select a role");
+		
+	}
+	roleValue= document.querySelector('input[name="role"]:checked').value;
+
+	if (roleValue=="administrator"){
+			admin=true;
+			window.location.href = "index.html";
+			
+
+		
+
+
+	}
+	else if (roleValue=="participant"){
+
+			admin=false;
+			window.location.href = "index.html";
+
+
+	}
+
+
+}
