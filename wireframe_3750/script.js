@@ -68,10 +68,18 @@ $(document).ready(function(){
 	document.getElementById("liveChatLink").onclick=function(){
 		window.location.href = "under_construction.html";
 	};	
-	document.getElementById("logOutLink").onclick=function(){
+	if (document.getElementById("logOutLinkA")!=null){
+		document.getElementById("logOutLinkA").onclick=function(){
+			localStorage.setItem("state", "none");
+			window.location.href = "index.html";
+		};
+}
+if (document.getElementById("logOutLinkB")!=null){
+		document.getElementById("logOutLinkB").onclick=function(){
 		localStorage.setItem("state", "none");
 		window.location.href = "index.html";
 	};	
+}
 	document.getElementById("profileLink").onclick=function(){
 		window.location.href = "under_construction.html";
 	};	
@@ -105,14 +113,12 @@ $(document).ready(function(){
 		}
 	});
 	document.getElementById("loginButton").onclick=function(){
-		handleLogin (admin);
+		handleLogin ();
 	};
 
-	document.getElementById("cancelButton").onclick=function(){
-		window.location.href="index.html"
-	};
 
-	function handleLogin (admin) {
+
+	function handleLogin () {
 		
 		usernameValue= document.getElementById('username').value  ;
 		passwordValue=document.getElementById('password').value;
@@ -138,5 +144,7 @@ $(document).ready(function(){
 		} 
 	}
 
-
+	document.getElementById("cancelButton").onclick=function(){
+		window.location.href="index.html"
+	};
 });
