@@ -342,6 +342,12 @@ button {
 	height: 19px;
 }
 
+#searchButton {
+	width: 70px;
+	background-color: white;
+	height:19px;
+}
+
 /* "part_invite.html" style END */
 /* Log-in form style */
 #loginForm {
