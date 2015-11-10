@@ -81,8 +81,7 @@ $(document).ready(function(){
 			$(this).text("Invited");
 			invites++;
 		} else {
-			//popup indicating max number of participants invited has been reached
-			//NOOP for now
+			window.alert("You cannot invite more than 4 people.")
 		}
 	});
 	document.getElementById("loginButton").onclick=function(){
