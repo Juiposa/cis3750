@@ -1,10 +1,9 @@
-//last bash version
 $(document).ready(function(){
 	var admin = false; /* admin is logged in when TRUE */
 	var part = false;
 	var invites =  0; //total number of people the team captain has invited
 
-	localStorage.setItem("state", "admin"); //admin, part, or none
+	//localStorage.setItem("state", "admin"); //admin, part, or none
 	updateLogin(); //call this once the user has logged in 
 
 	function updateLogin(){
@@ -62,8 +61,6 @@ $(document).ready(function(){
 	document.getElementById("loginLink").onclick=function(){
 		window.location.href = "login.html";
 	};
-
-
 	
 	document.getElementById("aboutLink").onclick=function(){
 		window.location.href = "under_construction.html";
