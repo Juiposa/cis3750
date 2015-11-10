@@ -62,13 +62,13 @@ $(document).ready(function(){
 
 	
 	document.getElementById("aboutLink").onclick=function(){
-		window.location.href = "about.html";
+		window.location.href = "under_construction.html";
 	};
 	document.getElementById("homeLink").onclick=function(){
 		window.location.href = "index.html";
 	};
 	document.getElementById("contactLink").onclick=function(){
-		window.location.href = "contact.html";
+		window.location.href = "under_construction.html";
 	};
 	document.getElementById("registerLink").onclick=function(){
 		window.location.href = "under_construction.html";
