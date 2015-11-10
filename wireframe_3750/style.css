@@ -288,6 +288,7 @@ option{
 }
 
 
+
 /* "route_create.html" styling END */
 
 /* "part_invite.html" style */
@@ -318,7 +319,64 @@ button {
 }
 
 /* "part_invite.html" style END */
+/* Log-in form style */
+#loginForm {
+	border: 3px solid black;
+	margin: auto;
+	width: 60%;
+	
+	text-align: center;
+	position: relative;
+	background: grey;
+}
 
+#username {
+		background-color: white; 
+
+}
+#password {
+		background-color: white; 
+
+}
+
+#buttongroup
+{
+    border: 1px solid lime;
+    text-align: center;
+}
+
+
+div #loginChoices {
+	margin: 0;
+    text-align: center;
+
+}
+#loginButton{
+	height:30px;
+	width:75px;
+	font-size:18px;
+	background:black;
+	color:black;
+	font-weight:bold;
+	background:orange;
+}
+#cancelButton {
+	height:30px;
+	width:75px;
+	font-size:18px;
+	background:black;
+	color:black;
+	font-weight:bold;
+	background:orange;
+}
+ #finalButtons {
+	
+	text-align:center;
+	float: center;
+
+}
+
+/* Log-in form style end */
 /* "under_construction.html" style */
 
 #underCon {
@@ -328,5 +386,7 @@ button {
 	text-align:center;
 	background-color:grey;
 }
+
+
 
 /* "under_construction.html" style */
