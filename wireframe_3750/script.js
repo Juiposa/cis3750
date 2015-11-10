@@ -68,7 +68,11 @@ $(document).ready(function(){
 	document.getElementById("liveChatLink").onclick=function(){
 		window.location.href = "under_construction.html";
 	};	
-	document.getElementById("logOutLink").onclick=function(){
+	document.getElementById("logOutLinkA").onclick=function(){
+		localStorage.setItem("state", "none");
+		window.location.href = "index.html";
+	};	
+	document.getElementById("logOutLinkP").onclick=function(){
 		localStorage.setItem("state", "none");
 		window.location.href = "index.html";
 	};	
