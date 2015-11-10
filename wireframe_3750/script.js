@@ -1,6 +1,6 @@
 //last bash version
 $(document).ready(function(){
-	var admin = true; /* admin is logged in when TRUE */
+	var admin = false; /* admin is logged in when TRUE */
 	var part = false;
 	var invites =  0; //total number of people the team captain has invited
 	
@@ -33,11 +33,8 @@ $(document).ready(function(){
 		if(admin==true){
 			document.getElementById("adminMenu").style.display="block";
 		}
-		else {
+		if(part==true) {
 			document.getElementById("partMenu").style.display="block";
-
-
-
 		}
 	};
 	
