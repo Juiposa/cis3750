@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var invites =  0; //total number of people the team captain has invited
 
-	localStorage.setItem("state", "admin"); //admin, part, or none
+	//localStorage.setItem("state", "admin"); //admin, part, or none
 	updateLogin(); //call this once the user has logged in 
 
 	function updateLogin(){
@@ -69,7 +69,8 @@ $(document).ready(function(){
 		window.location.href = "under_construction.html";
 	};	
 	document.getElementById("logOutLink").onclick=function(){
-		//window.location.href = "";
+		localStorage.setItem("state", "none");
+		window.location.href = "index.html";
 	};	
 	document.getElementById("profileLink").onclick=function(){
 		window.location.href = "under_construction.html";
@@ -77,7 +78,7 @@ $(document).ready(function(){
 	document.getElementById("teamLink").onclick=function(){
 		window.location.href = "team_view.html";
 	};	
-	document.getElementById("loginLink").onclick=function(){
+	document.getElementById("loginTable").onclick=function(){
 		window.location.href = "login.html";
 	};	
 	document.getElementById("aboutLink").onclick=function(){
@@ -128,14 +129,13 @@ $(document).ready(function(){
 		roleValue= document.querySelector('input[name="role"]:checked').value;
 
 		if (roleValue=="administrator"){
-				admin=true;
+				localStorage.setItem("state", "admin");
 				window.location.href = "index.html";
 		}
 		else if (roleValue=="participant"){
-
-				admin=false;
+				localStorage.setItem("state", "part");
 				window.location.href = "index.html";
-		}
+		} 
 	}
 
 
