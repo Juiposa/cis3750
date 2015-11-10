@@ -355,13 +355,14 @@ button {
 /* "part_invite.html" style END */
 /* Log-in form style */
 #loginForm {
-	border: 3px solid black;
+	border: 4px solid black;
+	border-radius:15px;
 	margin: auto;
-	width: 60%;
-	margin-top:30px;
+	width: 40%;
 	text-align: center;
 	position: relative;
 	background: grey;
+	padding:10px;
 }
 
 #username {
