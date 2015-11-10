@@ -3,14 +3,18 @@ $(document).ready(function(){
 	var admin = false; /* admin is logged in when TRUE */
 	var part = false;
 	var invites =  0; //total number of people the team captain has invited
-	
+
+	localStorage.setItem("state", "part"); //admin, part, or none
+
 	updateLogin(); //call this once the user has logged in 
+
 	
 	function updateLogin(){
-		if(admin==true){
+		var state = localStorage.getItem("state");
+		if(state=="admin"){
 			document.getElementById("logTableCol1").innerHTML="ADMIN";
 		}
-		else if(part == true){
+		else if(state="part"){
 			document.getElementById("logTableCol1").innerHTML="PARTICIPANT";
 		}
 		else{
@@ -23,33 +27,35 @@ $(document).ready(function(){
 	};
 	
 	document.getElementById("loginLink").onmouseover=function(){
+		var state = localStorage.getItem("state");
+		
 		document.getElementById("arrowPic").src="pics/arroworange.png";
 		document.getElementById("loginTable").style.backgroundColor = "orange";
 		document.getElementById("loginTable").style.color = "beige";
 		document.getElementById("logTableCol1").style.backgroundColor = "orange";
 		document.getElementById("logTableCol2").style.backgroundColor = "orange";
-		
 
-		if(admin==true){
+		if(state=="admin"){
 			document.getElementById("adminMenu").style.display="block";
 		}
-		if(part==true) {
+		if(state=="part"){
 			document.getElementById("partMenu").style.display="block";
 		}
 	};
 	
 	document.getElementById("loginLink").onmouseout=function(){
+		var state = localStorage.getItem("state");
+		
 		document.getElementById("arrowPic").src="pics/arrow.png";
 		document.getElementById("loginTable").style.backgroundColor = "beige";
 		document.getElementById("loginTable").style.color = "orange";
 		document.getElementById("logTableCol1").style.backgroundColor = "beige";
 		document.getElementById("logTableCol2").style.backgroundColor = "beige";
 
-		
-		if(admin==true){
+		if(state=="admin"){
 			document.getElementById("adminMenu").style.display="none";
 		}
-		else{
+		if(state=="part"){
 			document.getElementById("partMenu").style.display="none";
 		}	
 	};
