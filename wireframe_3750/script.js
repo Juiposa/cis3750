@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var invites =  0; //total number of people the team captain has invited
 
-	localStorage.setItem("state", "admin"); //admin, part, or none
+	//localStorage.setItem("state", "part"); //admin, part, or none
 	updateLogin(); //call this once the user has logged in 
 
 	function updateLogin(){
@@ -57,7 +57,7 @@ $(document).ready(function(){
 
 
 	document.getElementById("manageRoutesLink").onclick=function(){
-		window.location.href = "routeManage.html";
+		window.location.href = "route_manage.html";
 	};	
 	document.getElementById("manageTeamsLink").onclick=function(){
 		window.location.href = "under_construction.html";
@@ -69,7 +69,7 @@ $(document).ready(function(){
 		window.location.href = "under_construction.html";
 	};	
 	document.getElementById("logOutLink").onclick=function(){
-		window.location.href = "";
+		//window.location.href = "";
 	};	
 	document.getElementById("profileLink").onclick=function(){
 		window.location.href = "under_construction.html";
