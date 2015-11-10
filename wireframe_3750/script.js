@@ -68,13 +68,13 @@ $(document).ready(function(){
 
 	
 	document.getElementById("aboutLink").onclick=function(){
-		window.location.href = "about.html";
+		window.location.href = "under_construction.html";
 	};
 	document.getElementById("homeLink").onclick=function(){
 		window.location.href = "index.html";
 	};
 	document.getElementById("contactLink").onclick=function(){
-		window.location.href = "contact.html";
+		window.location.href = "under_construction.html";
 	};
 	document.getElementById("registerLink").onclick=function(){
 		window.location.href = "under_construction.html";
@@ -87,12 +87,11 @@ $(document).ready(function(){
 			$(this).text("Invited");
 			invites++;
 		} else {
-			//popup indicating max number of participants invited has been reached
-			//NOOP for now
+			window.alert("You cannot invite more than 4 people.")
 		}
 	});
 	document.getElementById("loginButton").onclick=function(){
-		handleLogin (admin,participant);
+		handleLogin (admin);
 	};
 
 	document.getElementById("cancelButton").onclick=function(){
@@ -109,7 +108,7 @@ $(document).ready(function(){
 		// else if (passwordValue.length <6 && passwordValue.length >=1){
 		// 	alert ("Password is too short, please enter a password longer th");
 		// }
-		if (!document.getElementById('admin').checked && !document.getElementById('part').checked ){
+		if (usernameValue.length >1 && passwordValue.length >1 && !document.getElementById('admin').checked && !document.getElementById('part').checked ){
 			alert ("Please select a role");
 			
 		}
