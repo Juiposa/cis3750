@@ -4,8 +4,7 @@ $(document).ready(function(){
 	var part = false;
 	var invites =  0; //total number of people the team captain has invited
 
-	localStorage.setItem("state", "part"); //admin, part, or none
-
+	localStorage.setItem("state", "admin"); //admin, part, or none
 	updateLogin(); //call this once the user has logged in 
 
 	function updateLogin(){
@@ -13,7 +12,7 @@ $(document).ready(function(){
 		if(state=="admin"){
 			document.getElementById("logTableCol1").innerHTML="ADMIN";
 		}
-		else if(state="part"){
+		else if(state=="part"){
 			document.getElementById("logTableCol1").innerHTML="PARTICIPANT";
 		}
 		else{
@@ -116,7 +115,6 @@ $(document).ready(function(){
 		if (roleValue=="administrator"){
 				admin=true;
 				window.location.href = "index.html";
-
 		}
 		else if (roleValue=="participant"){
 
