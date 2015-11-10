@@ -86,7 +86,7 @@ $(document).ready(function(){
 		}
 	});
 	document.getElementById("loginButton").onclick=function(){
-		handleLogin (admin,participant);
+		handleLogin (admin);
 	};
 
 	document.getElementById("cancelButton").onclick=function(){
@@ -103,7 +103,7 @@ $(document).ready(function(){
 		// else if (passwordValue.length <6 && passwordValue.length >=1){
 		// 	alert ("Password is too short, please enter a password longer th");
 		// }
-		if (!document.getElementById('admin').checked && !document.getElementById('part').checked ){
+		if (usernameValue.length >1 && passwordValue.length >1 && !document.getElementById('admin').checked && !document.getElementById('part').checked ){
 			alert ("Please select a role");
 			
 		}
