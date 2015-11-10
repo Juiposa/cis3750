@@ -336,6 +336,12 @@ button {
 	border-radius: 6px;
 }
 
+#invButton {
+	width:70px;
+	background-color: white;
+	height: 19px;
+}
+
 /* "part_invite.html" style END */
 /* Log-in form style */
 #loginForm {
