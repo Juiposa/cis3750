@@ -6,6 +6,7 @@
 }
 /*page header styles*/
 #webHeader{
+
 	position:relative;
 	z-index:999;
 	width:70%;
@@ -35,6 +36,7 @@
 	height:175px;
 }
 #menu{
+
 	position:absolute;
 	margin-top:114px;
 	width:100%;
@@ -84,6 +86,8 @@
 }
 #twlogo,#fblogo{
 	height:30px;
+	padding-left:10px;
+	background:black;
 }
 #search{
 	height:30px;
@@ -288,9 +292,22 @@ option{
 	border:solid black 3px;
 }
 
-
-
 /* "route_create.html" styling END */
+
+/* route_select.html start*/
+
+.routeInfo{
+	color:orange;
+}
+.radioCell{
+	text-align:center;
+}
+
+
+
+/* route_select.html end */
+
+
 
 /* "part_invite.html" style */
 
