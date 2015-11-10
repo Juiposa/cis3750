@@ -8,7 +8,6 @@ $(document).ready(function(){
 
 	updateLogin(); //call this once the user has logged in 
 
-	
 	function updateLogin(){
 		var state = localStorage.getItem("state");
 		if(state=="admin"){

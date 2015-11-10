@@ -2,6 +2,9 @@
 	padding:0;
 	margin:0;
 	font-family:arial;
+	background:grey;
+}
+body{
 	background:orange;
 }
 /*page header styles*/
@@ -116,10 +119,11 @@
 	color:beige;
 }
 .infoTable{
-	padding:15px;
 	background:grey;
 	color:beige;
 	margin:0 auto;
+	font-size:18px;
+	padding:10px;
 }
 .infoTable td{
 	background:grey;
@@ -338,13 +342,13 @@ button {
 
 #invButton {
 	width:70px;
-	background-color: white;
+	background-color: beige;
 	height: 19px;
 }
 
 #searchButton {
 	width: 70px;
-	background-color: white;
+	background-color: beige;
 	height:19px;
 }
 
@@ -416,7 +420,5 @@ div #loginChoices {
 	text-align:center;
 	background-color:grey;
 }
-
-
 
 /* "under_construction.html" style */
