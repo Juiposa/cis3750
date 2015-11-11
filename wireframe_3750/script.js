@@ -107,7 +107,19 @@ $(document).ready(function(){
 	document.getElementById("registerLink").onclick=function(){
 		window.location.href = "under_construction.html";
 	};
-
+	
+			
+	$('#chRouteBtn').on('click', function() {
+		window.location.href = "route_select.html";	
+	});
+		
+	$('#invitePlBtn').on('click', function() {
+		window.location.href = "part_invite.html";
+	});
+	
+	$('#delTeamBtn').on('click', function() {
+		window.location.href = "team_delete.html";
+	});
 
 	$('#deleteBtn').on('click', function() {
 		var r = confirm("Are you sure you wish to delete your team?");
