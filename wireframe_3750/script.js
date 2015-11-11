@@ -101,7 +101,7 @@ $(document).ready(function(){
 		window.location.href = "index.html";
 	};
 	document.getElementById("contactLink").onclick=function(){
-		window.location.href = "under_construction.html";
+		window.location.href = "contact.html";
 	};
 	document.getElementById("registerLink").onclick=function(){
 		window.location.href = "under_construction.html";

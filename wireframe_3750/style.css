@@ -354,8 +354,19 @@ button {
 
 /* "part_invite.html" style END */
 /* Log-in form style */
-#loginForm {
+#ContactDetails{
+	margin:auto;
+	width:60%;
+	float:center ;
+}
+#deets {
+	margin:auto;
 	border: 4px solid black;
+	width: 70%;
+	
+}
+#loginForm {
+	
 	border-radius:15px;
 	margin: auto;
 	width: 40%;
