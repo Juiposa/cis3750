@@ -87,7 +87,8 @@ $(document).ready(function(){
 		var teamStatus = localStorage.getItem("teamStatus");
 		if (teamStatus == "true") {
 			window.location.href = "team_view.html";
-		} else {
+		} 
+		else {
 			window.location.href = "team_create.html";			
 		}
 	};	
