@@ -19,11 +19,11 @@
 								<tr>
 									<td style="text-align:right;"> <input type="text" id="search" value="Search..."> </td>
 									<td style="text-align:center;"> <button id="goBtn" type="button">&#10150;</button> </td>								
-									<td style="text-align:right;">  <div id="donateDiv"> <a id="donateLink" href="https://secure.e2rm.com/registrant/Donate.aspx?eventid=182553&langpref=en-CA&Referrer=https://admin.e2rm.com/EventSummary.aspx"> DONATE </a> </div> </td>
-									<td style="text-align:center;"> <a href="https://www.facebook.com/mealexchange/"> <img id="fblogo" src="pics/fblogo.png" /> </a> </td>
+									<td style="text-align:right;">  <div id="donateDiv"> <a id="donateLink" href="#"> DONATE </a> </div> </td>
+									<td style="text-align:center;"> <a href="#"> <img id="fblogo" src="pics/fblogo.png" /> </a> </td>
 								</tr>
 								<tr>
-									<td colspan="4" style="text-align:right;"> <a href="https://twitter.com/mealexchange?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <img id="twlogo" src="pics/twlogo.png" /> </a> </td>
+									<td colspan="4" style="text-align:right;"> <a href="#"> <img id="twlogo" src="pics/twlogo.png" /> </a> </td>
 								</tr>
 							</table>	
 						
@@ -61,57 +61,60 @@
 		</div>
 		<div id="main">
 			<!-- main content section -->
-			<div style="background:10px;padding:10px;font-size:16px; float:left ">
+
 				<h1 id="pageTitle">TEAM MANAGER</h1>
-				<p style="background:10px; padding:10px;font-size:16px; font-weight: bold;">Team Name: Team Twelve</p>
-				<button type="button" style=" color: #000000;  font-size: 16px; height: 25px; width: 140px; background: #f07f28; font-weight: bold;">Edit Name</button>
-				<p style="background:10px; padding:10px;font-size:16px; font-weight: bold;">Selected Route: RouteZZZ</p> 
-				<button id="changeRoute" type="button" style=" color: #000000;  font-size: 16px; height: 25px; width: 140px; background: #f07f28; font-weight: bold;">Change Route</button>
-			</div>
-			<br>
-			<br>
-			<br>
-		
-			<div style="background:10px;padding:10px;font-size:16px; float:left ">
-				<table id="members_table" style ="">
+				
+				<table style="text-align:center;border-radius:10px;border:solid black 3px;"class="infoTable">
 					<tr>
-						<th style="width:50%;">Team Members</th>
+						<td>
+							<p style="background:10px; padding:10px;font-size:16px; font-weight: bold;">Team Name: Team Twelve</p>
+							<button type="button" style=" color: #000000;  font-size: 16px; height: 25px; width: 140px; background: orange;">Edit Name</button>
+						</td>
+						<td>
+							<p style="background:10px; padding:10px;font-size:16px; font-weight: bold;">Selected Route: Route 7</p> 
+							<button type="button" style=" color: #000000; font-size: 16px; height: 25px; width: 140px; background: orange;">Change Route</button>
+						</td>
 					</tr>
-					<tr>
-						<td style="text-align:center">Jerry</th>	
-					</tr>
-					<tr>
-						<td style="text-align:center">Alex</th>
-					</tr>
-					<tr>
-						<td style="text-align:center">Clair</th>
-					</tr>
-					<tr>
-						<td style="text-align:center">Jamie</th>
+					<tr valign="top">
+						<td>
+							<table id="members_table">
+								<th style="width:50%;">Team Members</th>
+								<tr>
+									<td>Jerry</td>	
+								</tr>
+								<tr>
+									<td>Alex</td>
+								</tr>
+								<tr>
+									<td>Clair</td>
+								</tr>
+								<tr>
+									<td>Jamie</td>
+								</tr>
+							</table>
+				
+							<button type="button" style=" color: #000000;  font-size: 16px; height: 25px; width: 70px; background: orange;">Invite</button>
+						</td>
+						<td>
+							<table id="invites_table" >
+								<th style="width:50%;">Pending Invites</th>
+								<tr>
+									<td>Barry</td>	
+								</tr>
+								<tr>
+									<td>Greg</td>
+								</tr>
+								<tr>
+									<td>Erika</td>
+								</tr>
+							</table>
+							
+							<button type="button" style="  color: #000000;  font-size: 16px; height: 25px; width: 140px; background: orange;">Delete Team</button>
+						</td>
 					</tr>
 				</table>
-			</div>
-
-			<button id="inviterino" type="button" style=" color: #000000; font-size: 16px; height: 35px; width: 90px; background: #f07f28; font-weight: bold; text-align:center;">Invite</button>
-
-			<div style="background:10px;padding:10px;font-size:16px; float:left">
-				<table id="invites_table" >
-					<tr>
-						<th style="width:50%;">Pending Invites</th>
-					</tr>
-					<tr>
-						<td style="text-align:center">Barry</th>	
-					</tr>
-					<tr>
-						<td style="text-align:center">Greg</th>
-					</tr>
-					<tr>
-						<td style="text-align:center">Erika</th>
-					</tr>
-				</table>
-				<button id="deleteBtn" type="button" style="  color: #000000;  font-size: 16px; height: 45px; width: 240px; background: #f07f28; font-weight: bold; position:absolute;bottom:0;left:0;">Delete Team</button>
-			</div>
 		</div>
+		
 		<div id="footer">
 			<table id="footerTable">
 				<tr>
