@@ -121,6 +121,15 @@ $(document).ready(function(){
 		window.location.href = "team_delete.html";
 	});
 
+	$('#yesDelete').on('click', function() {
+		window.location.href = "team_view.html";
+	});
+	
+	$('#noDelete').on('click', function() {
+		window.location.href = "team_view.html";
+	});
+
+	
 	$('#deleteBtn').on('click', function() {
 		var r = confirm("Are you sure you wish to delete your team?");
 		if( r==true ) {
