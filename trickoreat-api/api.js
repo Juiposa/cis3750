@@ -23,7 +23,7 @@ function testInsert() {
 	//POST request
 	$.ajax({
 		method : "POST",
-		url : 'trickoreat-api/select.php',
+		url : 'trickoreat-api/insert.php',
 
 		//put your query here
 		data : { query : "INSERT INTO fuckthisshit (asshole) VALUES ('shit')" },
