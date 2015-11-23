@@ -1,18 +1,21 @@
 
 
-function testSelect() {
 
+function testSelect() {
+	console.log ("selecting parts");
+	
 	//POST request
 	var jqXHR = $.ajax({
 		method : "POST",
 		url : 'trickoreat-api/select.php',
 
 		//put your query here
-		data : { query : "SELECT * FROM fuckthisshit" },
+		data : { query : "SELECT username,firstName,surName,email  FROM accountTable WHERE role=\"part\" AND eventName=\"trickguelph\"" },
 
 		datatype : 'json',
 		async : false
 	});
+
 
 	//return values (processed or un-processed) to caller here
 	console.log(jqXHR.responseText);
@@ -34,4 +37,5 @@ function testInsert() {
 	});
 }
 
-testInsert();
+testSelect ();
+
