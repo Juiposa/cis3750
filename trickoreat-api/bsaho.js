@@ -1,5 +1,6 @@
 
 
+
 function testSelect() {
 	console.log ("selecting parts");
 	
@@ -37,3 +38,4 @@ function testInsert() {
 }
 
 testSelect ();
+

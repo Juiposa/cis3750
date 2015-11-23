@@ -10,8 +10,11 @@ mysql_select_db($dbname, $conn);
 
 $sql = $_POST['query'];
 
-$result = mysql_query($sql, $conn );        
-$array = mysql_fetch_row($result); 
+$result = mysql_query($sql, $conn );
+
+while($row = mysql_fetch_assoc($result)){
+ 	$array[] = $row;
+}
 
 echo json_encode($array);
 
