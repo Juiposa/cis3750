@@ -1,7 +1,21 @@
 
+//checks given username matchs the password
+function authenticate(username, password) {
+	
+	var jqXHR = $.ajax({
+		method : "POST",
+		url : 'trickoreat-api/select.php',
+
+		//put your query here
+		data : { query : "SELECT password FROM accountTable WHERE email=" + username },
+
+		datatype : 'json',
+		async : false
+	});
+}
 
 function testSelect() {
-
+	//dicks in ass
 	//POST request
 	var jqXHR = $.ajax({
 		method : "POST",

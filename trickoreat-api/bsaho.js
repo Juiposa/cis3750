@@ -26,7 +26,7 @@ function testInsert() {
 		url : 'trickoreat-api/insert.php',
 
 		//put your query here
-		data : { query : "INSERT INTO fuckthisshit (asshole) VALUES ('shit')" },
+		data : { query : "INSERT INTO fuckthisshit (asshole) VALUES ('bashit')" },
 
 		success : function() {
 			console.log("Insert success");
@@ -34,4 +34,4 @@ function testInsert() {
 	});
 }
 
-testSelect();
+testInsert();
