@@ -2,6 +2,7 @@
 
 function testSelect() {
 	console.log ("selecting parts");
+	
 	//POST request
 	var jqXHR = $.ajax({
 		method : "POST",
@@ -13,7 +14,7 @@ function testSelect() {
 		datatype : 'json',
 		async : false
 	});
-			
+
 
 	//return values (processed or un-processed) to caller here
 	console.log(jqXHR.responseText);
