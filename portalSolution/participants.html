@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Trick or Eat - Participants</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-------------------------- NAVIGATION BAR -------------------------->
+    <div id="container">
+    	<div id="image">
+    		<a href="index.html"><img src="http://trickoreat.ca/images/logo.png" alt="some_text" width="200" height="200"></a>
+    	</div>
+		<div id="navigation">	 
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+						<a class="navbar-brand" href="home.html">Trick or Eat</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="home.html">Home</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="events.html">Events<span class="caret"></span></a>
+          						<ul class="dropdown-menu">
+            						<li><a href="events.html">View</a></li>
+           							<li><a href="events.html">Create</a></li>
+            						<li><a href="events.html">Edit</a></li> 
+         					 	</ul>
+							</li>
+							<li class = "dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="routes.html">Routes<span class="caret"></span></a>
+          						<ul class="dropdown-menu">
+            						<li><a href="routes.html">View</a></li>
+           							<li><a href="routes.html">Create</a></li>
+            						<li><a href="routes.html">Edit</a></li> 
+         					 	</ul>
+							</li>
+							<li class = "dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="participants.html">Participants<span class="caret"></span></a>
+          						<ul class="dropdown-menu">
+            						<li><a href="participants.html">View</a></li>
+           							<li><a href="participants.html">Invite</a></li>
+         					 	</ul>
+							</li>
+							<li class = "dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="participants.html">Learn More<span class="caret"></span></a>
+          						<ul class="dropdown-menu">
+            						<li><a href="participants.html">Frequently Asked Questions</a></li>
+           							<li><a href="participants.html">Contact Us</a></li>
+         					 	</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+        					<li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+      					</ul>
+						
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container -->
+			</nav>
+		</div>
+	</div>
+
+	<!-------------------------- BODY -------------------------->
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box" id="participant-table-box-div">
+				
+				<!-- Page Header -->
+			    <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center"><strong>Participants</strong></h2>
+                    <hr>
+				</div>
+				
+				<!-- The Filter By Section -->
+				<div class="block-three" id="filter-div">
+					<form>
+						<b>Filter By:</b><br>
+						<div class="block-four">
+						<table id="filter-table" class="test">
+							<td>First Name: <input type="text" id="filter-first-name"></td>
+							<td>Last Name: <input type="text" id="filter-last-name"></td>
+							<td>Team Name: <input type="text" id="filter-team-name"></td>
+							<td><button type="button" id="filter-refresh-btn" onclick="filterTable()">Refresh</button></td>
+						</table>
+						</div>
+					</form>
+				</div>
+				
+				<!-- The Participants Table-->
+				<div class="block-one" id="table-div">	
+					<table id="participants-table">
+						<thead>
+							<tr>
+								<th><span class="text">First Name</span></th>
+								<th><span class="text">Last Name</span></th>
+								<th><span class="text">Email</span></th>
+								<th><span class="text">Student</span></th>
+								<th><span class="text">Participants Waiver</span></th>
+								<th><span class="text">Bus Waiver</span></th>
+								<th><span class="text">Team</span></th>
+								<th><span class="text">Team Captain</span></th>
+								<th><span class="text">Routes</span></th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- Sidebar -->
+				<div class="block-two" id="sidebar-div">
+					<a href="participants-create.html">Create Team</a><br><br>
+					<a href="participants-edit.html">Edit Team</a><br><br>
+					<a href="url">Invite Participant</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Meal Exchange 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Participants -->
+	<script src="js/participants.js"></script>
+	<script src="trickoreat-api/api.js"></script>
+	
+	<script> window.onload = populateParticipantsGrid; </script>
+
+</body>
+
+</html>
