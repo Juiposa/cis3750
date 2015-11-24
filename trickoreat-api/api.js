@@ -394,7 +394,7 @@ scheduledTime - date of event, in format YYYY-MM-DD
 RETURN:
 NOTHING
 */
-function createEvent(eventName,eventLocation,scheduledTime) {
+function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,scheduledDate) {
 
 
 	//depends on values from the html file, using dummy values until you decide how you're going to put data in. 
@@ -408,8 +408,8 @@ function createEvent(eventName,eventLocation,scheduledTime) {
 		scheduledTime="2015-11-12"
 	}
 
-	insertString="INSERT IGNORE INTO eventTable (eventName,eventLocation,scheduledTime) VALUES" 
-	valueString= "(\"" +eventName +"\"," + "\"" +eventLocation + "\",\"" + scheduledTime + "\")"
+	insertString="INSERT IGNORE INTO eventTable (eventName,eventLocation,scheduledDate,scheduledTime) VALUES" 
+	valueString= "(\"" +eventName +"\"," + "\"" +eventLocation + "\",\"" + scheduledDate + "\",\"" + scheduledStart + "\",\" + scheduledEnd + "\")"
 	queryString=insertString +valueString;
 	console.log ("Creating event string: " + queryString);
 	//POST request
