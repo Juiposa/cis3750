@@ -51,7 +51,7 @@ RETURNS:
 STRING containing content for a given section
 */
 
-function getContent(type,theContent){
+function getContent(type){
 	var qString = "";
 
 	qString = "SELECT content FROM webContent WHRERE type='" + type + "'"; 
@@ -364,7 +364,7 @@ JSON with all registered participants
 */
 function listAllParticipants() {
 	console.log ("selecting parts");
-	
+	listEmpty=true;
 	//POST request
 	var jqXHR = $.ajax({
 		method : "POST",
@@ -378,6 +378,24 @@ function listAllParticipants() {
 	});
 
     var json = JSON.parse (jqXHR.responseText);
+    if (json!=null && json!=undefined){
+    	listEmpty=false;
+
+	    var count=Object.keys(json).length ;
+	   	for (i=0;i< (count); i++){
+	   		firstname= json[i].firstName;
+	   		surname=json[i].surName;
+	   		email=json[i].email;
+	   		teamname=json[i].teamName;
+	   		if (teamname==null || teamname==undefined){
+	   			teamname="No Team"
+	   		}
+	   		//console.log (firstname + surname + email + teamname);
+	   	}
+	}else {
+		listEmpty=true;
+	}
+
     return json;
 }
 
@@ -394,7 +412,7 @@ scheduledTime - date of event, in format YYYY-MM-DD
 RETURN:
 NOTHING
 */
-function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,scheduledDate) {
+function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,scheduledDate,busWaiverName,partWaiverName) {
 
 
 	//depends on values from the html file, using dummy values until you decide how you're going to put data in. 
@@ -404,12 +422,13 @@ function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,schedul
 	if (eventLocation==undefined){
 		eventLocation="Guelph"
 	}
-	if (scheduledTime==undefined){
+	if (scheduledDate==undefined){
 		scheduledTime="2015-11-12"
 	}
 
-	insertString="INSERT IGNORE INTO eventTable (eventName,eventLocation,scheduledDate,scheduledTime) VALUES" 
-	valueString= "(\"" +eventName +"\"," + "\"" +eventLocation + "\",\"" + scheduledDate + "\",\"" + scheduledStart + "\",\" + scheduledEnd + "\")"
+	insertString="INSERT IGNORE INTO eventTable (eventName,eventLocation,scheduledDate,scheduledStart,scheduledEnd,busWaiverNM, partWaiverNM) VALUES" 
+	valueString= "(\"" +eventName +"\"," + "\"" +eventLocation + "\",\"" + scheduledDate + "\",\"" + scheduledStart + "\",\"" + scheduledEnd + 
+		"\",\"" +busWaiverName + "\",\"" + partWaiverName + "\")"
 	queryString=insertString +valueString;
 	console.log ("Creating event string: " + queryString);
 	//POST request
@@ -427,6 +446,8 @@ function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,schedul
 
 }
 
+//Gets every single event in the table and all the data associated with each event.
+
 function getAllEvents (){
 	checkString="SELECT * FROM eventTable" 
 	var checkJSON = $.ajax({
@@ -439,9 +460,10 @@ function getAllEvents (){
 		datatype : 'json',
 		async : false
 	});
-
+	//pase json
     var  json= JSON.parse (checkJSON.responseText);
     var count=Object.keys(json).length ;
+    //cycles through every event and pulls out the necessary data
    	for (i=0;i< (count); i++){
    		eventName= json[i].eventName;
    		eventLocation=json[i].eventLocation;
@@ -454,15 +476,18 @@ function getAllEvents (){
 
    		teamCount=json[i].teamCount;
    		
-   		console.log ("Event Name: " + eventName + " Location: " +eventLocation + " Time " + scheduledStart + " Team Count " + teamCount);
+   		//for debugging purposes
+   		//console.log ("Name: " + eventName + " Location: " +eventLocation + " STime: " + scheduledStart + "End: " + scheduledEnd + "Date: "+ scheduledDate + " TP Count " + teamCount + "/" + participantCount + " ID " + eventID);
 
    	}
 }
 
 function searchEvent (eventName){
+	eventFound=false;
 
-
-	checkString="SELECT * FROM eventTable WHERE eventName LIKE \"" + "\"" 
+	console.log ("Searching all events");
+	checkString="SELECT * FROM eventTable WHERE eventName LIKE \"" +  eventName + "\"" 
+	console.log (checkString);
 	var checkJSON = $.ajax({
 		method : "POST",
 		url : 'trickoreat-api/select.php',
@@ -475,22 +500,28 @@ function searchEvent (eventName){
 	});
 
     var  json= JSON.parse (checkJSON.responseText);
-    var count=Object.keys(json).length ;
-   	for (i=0;i< (count); i++){
-   		eventName= json[i].eventName;
-   		eventLocation=json[i].eventLocation;
-   		scheduledStart=json[i].scheduledStart;
-   		scheduledEnd=json[i].scheduledEnd;
-   		scheduledDate=json[i].scheduledDate;
-   		participantCount=json[i].participantCount;
-   		teamCount=json[i].teamCount;
-   		eventID=json[i].eventID;
+    if (json!=null & json!=undefined){
+    	eventFound=true;
+	    var count=Object.keys(json).length ;
+	   	for (i=0;i< (count); i++){
+	   		eventName= json[i].eventName;
+	   		eventLocation=json[i].eventLocation;
+	   		scheduledStart=json[i].scheduledStart;
+	   		scheduledEnd=json[i].scheduledEnd;
+	   		scheduledDate=json[i].scheduledDate;
+	   		participantCount=json[i].participantCount;
+	   		teamCount=json[i].teamCount;
+	   		eventID=json[i].eventID;
 
-   		teamCount=json[i].teamCount;
-   		
-   		console.log ("Event Name: " + eventName + " Location: " +eventLocation + " Time " + scheduledStart + " Team Count " + teamCount);
+	   		teamCount=json[i].teamCount;
+	   		
+	   //	console.log ("Name: " + eventName + " Location: " +eventLocation + " STime: " + scheduledStart + "End: " + scheduledEnd + "Date: "+ 	   			scheduledDate + " TP Count " + teamCount + "/" + participantCount + " ID " + eventID);
 
-   	}
 
+	   	}
+    }else {
+    	eventName="No event found"
+    	eventFound=false
+    }
 
 }
