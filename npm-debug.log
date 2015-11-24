@@ -1,0 +1,1231 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'minifier', '-g' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.29
+4 verbose cache add [ 'minifier', null ]
+5 verbose cache add name=undefined spec="minifier" args=["minifier",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'minifier',
+6 verbose parsed url   path: 'minifier',
+6 verbose parsed url   href: 'minifier' }
+7 silly lockFile 59c8589d-minifier minifier
+8 verbose lock minifier /root/.npm/59c8589d-minifier.lock
+9 silly lockFile 59c8589d-minifier minifier
+10 silly lockFile 59c8589d-minifier minifier
+11 verbose addNamed [ 'minifier', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 690faf1f-minifier minifier@
+14 verbose lock minifier@ /root/.npm/690faf1f-minifier.lock
+15 silly addNameRange { name: 'minifier', range: '*', hasData: false }
+16 verbose request where is /minifier
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 0193996df2943a6b
+19 verbose url raw /minifier
+20 verbose url resolving [ 'https://registry.npmjs.org/', './minifier' ]
+21 verbose url resolved https://registry.npmjs.org/minifier
+22 verbose request where is https://registry.npmjs.org/minifier
+23 info trying registry request attempt 1 at 16:35:24
+24 verbose etag "9B3CLUI247JYIOGZIJ4P20EU8"
+25 http GET https://registry.npmjs.org/minifier
+26 http 304 https://registry.npmjs.org/minifier
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Tue, 24 Nov 2015 21:35:26 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"9B3CLUI247JYIOGZIJ4P20EU8"',
+27 silly registry.get     age: '23',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-jfk1027-JFK',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1448400926.331992,VS0,VE0',
+27 silly registry.get     vary: 'Accept' } ]
+28 verbose etag https://registry.npmjs.org/minifier from cache
+29 silly addNameRange number 2 { name: 'minifier', range: '*', hasData: true }
+30 silly addNameRange versions [ 'minifier',
+30 silly addNameRange   [ '0.4.1',
+30 silly addNameRange     '0.4.2',
+30 silly addNameRange     '0.4.3',
+30 silly addNameRange     '0.4.4',
+30 silly addNameRange     '0.4.5',
+30 silly addNameRange     '0.4.6',
+30 silly addNameRange     '0.5.0',
+30 silly addNameRange     '0.6.0',
+30 silly addNameRange     '0.6.1',
+30 silly addNameRange     '0.6.2',
+30 silly addNameRange     '0.7.0',
+30 silly addNameRange     '0.7.1' ] ]
+31 verbose addNamed [ 'minifier', '0.7.1' ]
+32 verbose addNamed [ '0.7.1', '0.7.1' ]
+33 silly lockFile deab9d6e-minifier-0-7-1 minifier@0.7.1
+34 verbose lock minifier@0.7.1 /root/.npm/deab9d6e-minifier-0-7-1.lock
+35 silly lockFile deab9d6e-minifier-0-7-1 minifier@0.7.1
+36 silly lockFile deab9d6e-minifier-0-7-1 minifier@0.7.1
+37 silly lockFile 690faf1f-minifier minifier@
+38 silly lockFile 690faf1f-minifier minifier@
+39 silly resolved [ { author:
+39 silly resolved      { name: 'Benjamin Horsleben',
+39 silly resolved        email: 'benjamin@fizkerinc.dk',
+39 silly resolved        url: 'http://fizkerinc.dk' },
+39 silly resolved     name: 'minifier',
+39 silly resolved     description: 'A simple tool for minifying CSS/JS without a big setup',
+39 silly resolved     keywords: [ 'javascript js css minify minifier build' ],
+39 silly resolved     version: '0.7.1',
+39 silly resolved     license: 'WTFPL',
+39 silly resolved     main: 'index.js',
+39 silly resolved     repository: { type: 'git', url: 'git://github.com/fizker/minifier.git' },
+39 silly resolved     bugs: { url: 'https://github.com/fizker/minifier/issues' },
+39 silly resolved     dependencies:
+39 silly resolved      { commander: '^2.8.1',
+39 silly resolved        'css-resolve-import': '^0.1.1',
+39 silly resolved        fmerge: '^1.2.0',
+39 silly resolved        glob: '^5.0.14',
+39 silly resolved        'hogan.js': '^3.0.2',
+39 silly resolved        sqwish: '~0.2.2',
+39 silly resolved        'uglify-js': '^2.4.24' },
+39 silly resolved     bin: { minify: 'index.js' },
+39 silly resolved     scripts: { test: 'mocha' },
+39 silly resolved     devDependencies:
+39 silly resolved      { chai: '^3.2.0',
+39 silly resolved        'finc-chai-helpers': '~0.1.0',
+39 silly resolved        fzkes: '^0.14.1',
+39 silly resolved        mocha: '^2.2.5' },
+39 silly resolved     optionalDependencies: {},
+39 silly resolved     engines: { node: '~0.10.0 || ^0.12.0' },
+39 silly resolved     gitHead: '1a2e36e4bf0f170727f4540b8ecbd493a74770fa',
+39 silly resolved     homepage: 'https://github.com/fizker/minifier#readme',
+39 silly resolved     _id: 'minifier@0.7.1',
+39 silly resolved     _shasum: 'c5e4d98cb15b9c802cb9e8fbf207d520cd107105',
+39 silly resolved     _from: 'minifier@',
+39 silly resolved     _npmVersion: '2.11.3',
+39 silly resolved     _nodeVersion: '0.12.7',
+39 silly resolved     _npmUser: { name: 'fizker', email: 'benjamin@fizkerinc.dk' },
+39 silly resolved     maintainers: [ [Object] ],
+39 silly resolved     dist:
+39 silly resolved      { shasum: 'c5e4d98cb15b9c802cb9e8fbf207d520cd107105',
+39 silly resolved        tarball: 'http://registry.npmjs.org/minifier/-/minifier-0.7.1.tgz' },
+39 silly resolved     directories: {},
+39 silly resolved     _resolved: 'https://registry.npmjs.org/minifier/-/minifier-0.7.1.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install minifier@0.7.1 into /usr/local/lib
+41 info installOne minifier@0.7.1
+42 verbose lib/node_modules/minifier unbuild
+43 verbose tar unpack /root/.npm/minifier/0.7.1/package.tgz
+44 silly lockFile b7f18462--local-lib-node-modules-minifier tar:///usr/local/lib/node_modules/minifier
+45 verbose lock tar:///usr/local/lib/node_modules/minifier /root/.npm/b7f18462--local-lib-node-modules-minifier.lock
+46 silly lockFile 2cfcda30-t-npm-minifier-0-7-1-package-tgz tar:///root/.npm/minifier/0.7.1/package.tgz
+47 verbose lock tar:///root/.npm/minifier/0.7.1/package.tgz /root/.npm/2cfcda30-t-npm-minifier-0-7-1-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 silly gunzTarPerm extractEntry package.json
+50 silly gunzTarPerm extractEntry .npmignore
+51 silly gunzTarPerm extractEntry index.js
+52 silly gunzTarPerm extractEntry .gitattributes
+53 silly gunzTarPerm extractEntry readme.md
+54 silly gunzTarPerm extractEntry src/css.js
+55 silly gunzTarPerm extractEntry src/minify.js
+56 silly gunzTarPerm extractEntry src/utils.js
+57 silly lockFile b7f18462--local-lib-node-modules-minifier tar:///usr/local/lib/node_modules/minifier
+58 silly lockFile b7f18462--local-lib-node-modules-minifier tar:///usr/local/lib/node_modules/minifier
+59 silly lockFile 2cfcda30-t-npm-minifier-0-7-1-package-tgz tar:///root/.npm/minifier/0.7.1/package.tgz
+60 silly lockFile 2cfcda30-t-npm-minifier-0-7-1-package-tgz tar:///root/.npm/minifier/0.7.1/package.tgz
+61 info preinstall minifier@0.7.1
+62 verbose readDependencies using package.json deps
+63 verbose readDependencies using package.json deps
+64 verbose cache add [ 'commander@^2.8.1', null ]
+65 verbose cache add name=undefined spec="commander@^2.8.1" args=["commander@^2.8.1",null]
+66 verbose parsed url { protocol: null,
+66 verbose parsed url   slashes: null,
+66 verbose parsed url   auth: null,
+66 verbose parsed url   host: null,
+66 verbose parsed url   port: null,
+66 verbose parsed url   hostname: null,
+66 verbose parsed url   hash: null,
+66 verbose parsed url   search: null,
+66 verbose parsed url   query: null,
+66 verbose parsed url   pathname: 'commander@^2.8.1',
+66 verbose parsed url   path: 'commander@^2.8.1',
+66 verbose parsed url   href: 'commander@^2.8.1' }
+67 verbose cache add [ 'css-resolve-import@^0.1.1', null ]
+68 verbose cache add name=undefined spec="css-resolve-import@^0.1.1" args=["css-resolve-import@^0.1.1",null]
+69 verbose parsed url { protocol: null,
+69 verbose parsed url   slashes: null,
+69 verbose parsed url   auth: null,
+69 verbose parsed url   host: null,
+69 verbose parsed url   port: null,
+69 verbose parsed url   hostname: null,
+69 verbose parsed url   hash: null,
+69 verbose parsed url   search: null,
+69 verbose parsed url   query: null,
+69 verbose parsed url   pathname: 'css-resolve-import@^0.1.1',
+69 verbose parsed url   path: 'css-resolve-import@^0.1.1',
+69 verbose parsed url   href: 'css-resolve-import@^0.1.1' }
+70 verbose cache add [ 'fmerge@^1.2.0', null ]
+71 verbose cache add name=undefined spec="fmerge@^1.2.0" args=["fmerge@^1.2.0",null]
+72 verbose parsed url { protocol: null,
+72 verbose parsed url   slashes: null,
+72 verbose parsed url   auth: null,
+72 verbose parsed url   host: null,
+72 verbose parsed url   port: null,
+72 verbose parsed url   hostname: null,
+72 verbose parsed url   hash: null,
+72 verbose parsed url   search: null,
+72 verbose parsed url   query: null,
+72 verbose parsed url   pathname: 'fmerge@^1.2.0',
+72 verbose parsed url   path: 'fmerge@^1.2.0',
+72 verbose parsed url   href: 'fmerge@^1.2.0' }
+73 verbose cache add name="commander" spec="^2.8.1" args=["commander","^2.8.1"]
+74 verbose parsed url { protocol: null,
+74 verbose parsed url   slashes: null,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: null,
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: null,
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: '^2.8.1',
+74 verbose parsed url   path: '^2.8.1',
+74 verbose parsed url   href: '^2.8.1' }
+75 verbose addNamed [ 'commander', '^2.8.1' ]
+76 verbose addNamed [ null, '>=2.8.1-0 <3.0.0-0' ]
+77 silly lockFile f6e43770-commander-2-8-1 commander@^2.8.1
+78 verbose lock commander@^2.8.1 /root/.npm/f6e43770-commander-2-8-1.lock
+79 verbose cache add name="css-resolve-import" spec="^0.1.1" args=["css-resolve-import","^0.1.1"]
+80 verbose parsed url { protocol: null,
+80 verbose parsed url   slashes: null,
+80 verbose parsed url   auth: null,
+80 verbose parsed url   host: null,
+80 verbose parsed url   port: null,
+80 verbose parsed url   hostname: null,
+80 verbose parsed url   hash: null,
+80 verbose parsed url   search: null,
+80 verbose parsed url   query: null,
+80 verbose parsed url   pathname: '^0.1.1',
+80 verbose parsed url   path: '^0.1.1',
+80 verbose parsed url   href: '^0.1.1' }
+81 verbose addNamed [ 'css-resolve-import', '^0.1.1' ]
+82 verbose addNamed [ null, '>=0.1.1-0 <0.2.0-0' ]
+83 silly lockFile 0a86c72c-css-resolve-import-0-1-1 css-resolve-import@^0.1.1
+84 verbose lock css-resolve-import@^0.1.1 /root/.npm/0a86c72c-css-resolve-import-0-1-1.lock
+85 verbose cache add name="fmerge" spec="^1.2.0" args=["fmerge","^1.2.0"]
+86 verbose parsed url { protocol: null,
+86 verbose parsed url   slashes: null,
+86 verbose parsed url   auth: null,
+86 verbose parsed url   host: null,
+86 verbose parsed url   port: null,
+86 verbose parsed url   hostname: null,
+86 verbose parsed url   hash: null,
+86 verbose parsed url   search: null,
+86 verbose parsed url   query: null,
+86 verbose parsed url   pathname: '^1.2.0',
+86 verbose parsed url   path: '^1.2.0',
+86 verbose parsed url   href: '^1.2.0' }
+87 verbose addNamed [ 'fmerge', '^1.2.0' ]
+88 verbose addNamed [ null, '>=1.2.0-0 <2.0.0-0' ]
+89 silly lockFile 3b9d73cd-fmerge-1-2-0 fmerge@^1.2.0
+90 verbose lock fmerge@^1.2.0 /root/.npm/3b9d73cd-fmerge-1-2-0.lock
+91 verbose cache add [ 'glob@^5.0.14', null ]
+92 verbose cache add name=undefined spec="glob@^5.0.14" args=["glob@^5.0.14",null]
+93 verbose parsed url { protocol: null,
+93 verbose parsed url   slashes: null,
+93 verbose parsed url   auth: null,
+93 verbose parsed url   host: null,
+93 verbose parsed url   port: null,
+93 verbose parsed url   hostname: null,
+93 verbose parsed url   hash: null,
+93 verbose parsed url   search: null,
+93 verbose parsed url   query: null,
+93 verbose parsed url   pathname: 'glob@^5.0.14',
+93 verbose parsed url   path: 'glob@^5.0.14',
+93 verbose parsed url   href: 'glob@^5.0.14' }
+94 verbose cache add [ 'hogan.js@^3.0.2', null ]
+95 verbose cache add name=undefined spec="hogan.js@^3.0.2" args=["hogan.js@^3.0.2",null]
+96 verbose parsed url { protocol: null,
+96 verbose parsed url   slashes: null,
+96 verbose parsed url   auth: null,
+96 verbose parsed url   host: null,
+96 verbose parsed url   port: null,
+96 verbose parsed url   hostname: null,
+96 verbose parsed url   hash: null,
+96 verbose parsed url   search: null,
+96 verbose parsed url   query: null,
+96 verbose parsed url   pathname: 'hogan.js@^3.0.2',
+96 verbose parsed url   path: 'hogan.js@^3.0.2',
+96 verbose parsed url   href: 'hogan.js@^3.0.2' }
+97 verbose cache add name="glob" spec="^5.0.14" args=["glob","^5.0.14"]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: '^5.0.14',
+98 verbose parsed url   path: '^5.0.14',
+98 verbose parsed url   href: '^5.0.14' }
+99 verbose addNamed [ 'glob', '^5.0.14' ]
+100 verbose addNamed [ null, '>=5.0.14-0 <6.0.0-0' ]
+101 silly lockFile 6285da20-glob-5-0-14 glob@^5.0.14
+102 verbose lock glob@^5.0.14 /root/.npm/6285da20-glob-5-0-14.lock
+103 verbose cache add name="hogan.js" spec="^3.0.2" args=["hogan.js","^3.0.2"]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: '^3.0.2',
+104 verbose parsed url   path: '^3.0.2',
+104 verbose parsed url   href: '^3.0.2' }
+105 verbose addNamed [ 'hogan.js', '^3.0.2' ]
+106 verbose addNamed [ null, '>=3.0.2-0 <4.0.0-0' ]
+107 silly lockFile 3a3adee7-hogan-js-3-0-2 hogan.js@^3.0.2
+108 verbose lock hogan.js@^3.0.2 /root/.npm/3a3adee7-hogan-js-3-0-2.lock
+109 verbose cache add [ 'sqwish@~0.2.2', null ]
+110 verbose cache add name=undefined spec="sqwish@~0.2.2" args=["sqwish@~0.2.2",null]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: 'sqwish@~0.2.2',
+111 verbose parsed url   path: 'sqwish@~0.2.2',
+111 verbose parsed url   href: 'sqwish@~0.2.2' }
+112 silly addNameRange { name: 'commander',
+112 silly addNameRange   range: '>=2.8.1-0 <3.0.0-0',
+112 silly addNameRange   hasData: false }
+113 silly addNameRange { name: 'css-resolve-import',
+113 silly addNameRange   range: '>=0.1.1-0 <0.2.0-0',
+113 silly addNameRange   hasData: false }
+114 silly addNameRange { name: 'fmerge', range: '>=1.2.0-0 <2.0.0-0', hasData: false }
+115 verbose cache add name="sqwish" spec="~0.2.2" args=["sqwish","~0.2.2"]
+116 verbose parsed url { protocol: null,
+116 verbose parsed url   slashes: null,
+116 verbose parsed url   auth: null,
+116 verbose parsed url   host: null,
+116 verbose parsed url   port: null,
+116 verbose parsed url   hostname: null,
+116 verbose parsed url   hash: null,
+116 verbose parsed url   search: null,
+116 verbose parsed url   query: null,
+116 verbose parsed url   pathname: '~0.2.2',
+116 verbose parsed url   path: '~0.2.2',
+116 verbose parsed url   href: '~0.2.2' }
+117 verbose addNamed [ 'sqwish', '~0.2.2' ]
+118 verbose addNamed [ null, '>=0.2.2-0 <0.3.0-0' ]
+119 silly lockFile c6870a7d-sqwish-0-2-2 sqwish@~0.2.2
+120 verbose lock sqwish@~0.2.2 /root/.npm/c6870a7d-sqwish-0-2-2.lock
+121 verbose cache add [ 'uglify-js@^2.4.24', null ]
+122 verbose cache add name=undefined spec="uglify-js@^2.4.24" args=["uglify-js@^2.4.24",null]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: 'uglify-js@^2.4.24',
+123 verbose parsed url   path: 'uglify-js@^2.4.24',
+123 verbose parsed url   href: 'uglify-js@^2.4.24' }
+124 silly addNameRange { name: 'glob', range: '>=5.0.14-0 <6.0.0-0', hasData: false }
+125 silly addNameRange { name: 'hogan.js', range: '>=3.0.2-0 <4.0.0-0', hasData: false }
+126 verbose cache add name="uglify-js" spec="^2.4.24" args=["uglify-js","^2.4.24"]
+127 verbose parsed url { protocol: null,
+127 verbose parsed url   slashes: null,
+127 verbose parsed url   auth: null,
+127 verbose parsed url   host: null,
+127 verbose parsed url   port: null,
+127 verbose parsed url   hostname: null,
+127 verbose parsed url   hash: null,
+127 verbose parsed url   search: null,
+127 verbose parsed url   query: null,
+127 verbose parsed url   pathname: '^2.4.24',
+127 verbose parsed url   path: '^2.4.24',
+127 verbose parsed url   href: '^2.4.24' }
+128 verbose addNamed [ 'uglify-js', '^2.4.24' ]
+129 verbose addNamed [ null, '>=2.4.24-0 <3.0.0-0' ]
+130 silly lockFile 5bc39e92-uglify-js-2-4-24 uglify-js@^2.4.24
+131 verbose lock uglify-js@^2.4.24 /root/.npm/5bc39e92-uglify-js-2-4-24.lock
+132 silly addNameRange { name: 'sqwish', range: '>=0.2.2-0 <0.3.0-0', hasData: false }
+133 silly addNameRange { name: 'uglify-js',
+133 silly addNameRange   range: '>=2.4.24-0 <3.0.0-0',
+133 silly addNameRange   hasData: false }
+134 verbose request where is /commander
+135 verbose request registry https://registry.npmjs.org/
+136 verbose url raw /commander
+137 verbose url resolving [ 'https://registry.npmjs.org/', './commander' ]
+138 verbose url resolved https://registry.npmjs.org/commander
+139 verbose request where is https://registry.npmjs.org/commander
+140 info trying registry request attempt 1 at 16:35:24
+141 verbose etag "36VLTGHVBX52F9RM3GPZBGKFE"
+142 http GET https://registry.npmjs.org/commander
+143 verbose request where is /css-resolve-import
+144 verbose request registry https://registry.npmjs.org/
+145 verbose url raw /css-resolve-import
+146 verbose url resolving [ 'https://registry.npmjs.org/', './css-resolve-import' ]
+147 verbose url resolved https://registry.npmjs.org/css-resolve-import
+148 verbose request where is https://registry.npmjs.org/css-resolve-import
+149 info trying registry request attempt 1 at 16:35:24
+150 verbose etag "MTYYEPUP4C5LN2S6ZP6KVD2D"
+151 http GET https://registry.npmjs.org/css-resolve-import
+152 verbose request where is /fmerge
+153 verbose request registry https://registry.npmjs.org/
+154 verbose url raw /fmerge
+155 verbose url resolving [ 'https://registry.npmjs.org/', './fmerge' ]
+156 verbose url resolved https://registry.npmjs.org/fmerge
+157 verbose request where is https://registry.npmjs.org/fmerge
+158 info trying registry request attempt 1 at 16:35:24
+159 verbose etag "F3QJM7T3XOPQOV25VLEDY9NJJ"
+160 http GET https://registry.npmjs.org/fmerge
+161 verbose request where is /glob
+162 verbose request registry https://registry.npmjs.org/
+163 verbose url raw /glob
+164 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+165 verbose url resolved https://registry.npmjs.org/glob
+166 verbose request where is https://registry.npmjs.org/glob
+167 info trying registry request attempt 1 at 16:35:24
+168 verbose etag "EKS9REXHLRUFX5XZYX3CWQW4F"
+169 http GET https://registry.npmjs.org/glob
+170 verbose request where is /hogan.js
+171 verbose request registry https://registry.npmjs.org/
+172 verbose url raw /hogan.js
+173 verbose url resolving [ 'https://registry.npmjs.org/', './hogan.js' ]
+174 verbose url resolved https://registry.npmjs.org/hogan.js
+175 verbose request where is https://registry.npmjs.org/hogan.js
+176 info trying registry request attempt 1 at 16:35:24
+177 verbose etag "C52KM8PKK9UA3NUX83A7D9BB2"
+178 http GET https://registry.npmjs.org/hogan.js
+179 verbose request where is /sqwish
+180 verbose request registry https://registry.npmjs.org/
+181 verbose url raw /sqwish
+182 verbose url resolving [ 'https://registry.npmjs.org/', './sqwish' ]
+183 verbose url resolved https://registry.npmjs.org/sqwish
+184 verbose request where is https://registry.npmjs.org/sqwish
+185 info trying registry request attempt 1 at 16:35:24
+186 verbose etag "5BV7DJP5MHCEUT76GBJJ803MR"
+187 http GET https://registry.npmjs.org/sqwish
+188 verbose request where is /uglify-js
+189 verbose request registry https://registry.npmjs.org/
+190 verbose url raw /uglify-js
+191 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js' ]
+192 verbose url resolved https://registry.npmjs.org/uglify-js
+193 verbose request where is https://registry.npmjs.org/uglify-js
+194 info trying registry request attempt 1 at 16:35:24
+195 verbose etag "6981GGNNJXPBCEW88RJW92ACH"
+196 http GET https://registry.npmjs.org/uglify-js
+197 http 304 https://registry.npmjs.org/commander
+198 silly registry.get cb [ 304,
+198 silly registry.get   { date: 'Tue, 24 Nov 2015 21:35:26 GMT',
+198 silly registry.get     via: '1.1 varnish',
+198 silly registry.get     'cache-control': 'max-age=60',
+198 silly registry.get     etag: '"36VLTGHVBX52F9RM3GPZBGKFE"',
+198 silly registry.get     age: '3',
+198 silly registry.get     connection: 'keep-alive',
+198 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
+198 silly registry.get     'x-cache': 'HIT',
+198 silly registry.get     'x-cache-hits': '2',
+198 silly registry.get     'x-timer': 'S1448400926.501754,VS0,VE0',
+198 silly registry.get     vary: 'Accept' } ]
+199 verbose etag https://registry.npmjs.org/commander from cache
+200 http 304 https://registry.npmjs.org/css-resolve-import
+201 silly registry.get cb [ 304,
+201 silly registry.get   { date: 'Tue, 24 Nov 2015 21:35:26 GMT',
+201 silly registry.get     via: '1.1 varnish',
+201 silly registry.get     'cache-control': 'max-age=60',
+201 silly registry.get     etag: '"MTYYEPUP4C5LN2S6ZP6KVD2D"',
+201 silly registry.get     age: '13',
+201 silly registry.get     connection: 'keep-alive',
+201 silly registry.get     'x-served-by': 'cache-jfk1022-JFK',
+201 silly registry.get     'x-cache': 'HIT',
+201 silly registry.get     'x-cache-hits': '1',
+201 silly registry.get     'x-timer': 'S1448400926.503398,VS0,VE1',
+201 silly registry.get     vary: 'Accept' } ]
+202 verbose etag https://registry.npmjs.org/css-resolve-import from cache
+203 http 304 https://registry.npmjs.org/glob
+204 silly registry.get cb [ 304,
+204 silly registry.get   { date: 'Tue, 24 Nov 2015 21:35:26 GMT',
+204 silly registry.get     via: '1.1 varnish',
+204 silly registry.get     'cache-control': 'max-age=60',
+204 silly registry.get     etag: '"EKS9REXHLRUFX5XZYX3CWQW4F"',
+204 silly registry.get     age: '39',
+204 silly registry.get     connection: 'keep-alive',
+204 silly registry.get     'x-served-by': 'cache-jfk1033-JFK',
+204 silly registry.get     'x-cache': 'HIT',
+204 silly registry.get     'x-cache-hits': '16',
+204 silly registry.get     'x-timer': 'S1448400926.506648,VS0,VE0',
+204 silly registry.get     vary: 'Accept' } ]
+205 verbose etag https://registry.npmjs.org/glob from cache
+206 http 304 https://registry.npmjs.org/hogan.js
+207 silly registry.get cb [ 304,
+207 silly registry.get   { date: 'Tue, 24 Nov 2015 21:35:26 GMT',
+207 silly registry.get     via: '1.1 varnish',
+207 silly registry.get     'cache-control': 'max-age=60',
+207 silly registry.get     etag: '"C52KM8PKK9UA3NUX83A7D9BB2"',
+207 silly registry.get     age: '55',
+207 silly registry.get     connection: 'keep-alive',
+207 silly registry.get     'x-served-by': 'cache-jfk1024-JFK',
+207 silly registry.get     'x-cache': 'HIT',
+207 silly registry.get     'x-cache-hits': '1',
+207 silly registry.get     'x-timer': 'S1448400926.506730,VS0,VE0',
+207 silly registry.get     vary: 'Accept' } ]
+208 verbose etag https://registry.npmjs.org/hogan.js from cache
+209 silly addNameRange number 2 { name: 'commander', range: '>=2.8.1-0 <3.0.0-0', hasData: true }
+210 silly addNameRange versions [ 'commander',
+210 silly addNameRange   [ '0.0.1',
+210 silly addNameRange     '0.0.3',
+210 silly addNameRange     '0.0.4',
+210 silly addNameRange     '0.0.5',
+210 silly addNameRange     '0.1.0',
+210 silly addNameRange     '0.2.0',
+210 silly addNameRange     '0.2.1',
+210 silly addNameRange     '0.3.0',
+210 silly addNameRange     '0.3.1',
+210 silly addNameRange     '0.3.2',
+210 silly addNameRange     '0.3.3',
+210 silly addNameRange     '0.4.0',
+210 silly addNameRange     '0.4.1',
+210 silly addNameRange     '0.4.2',
+210 silly addNameRange     '0.4.3',
+210 silly addNameRange     '0.5.0',
+210 silly addNameRange     '0.5.1',
+210 silly addNameRange     '0.6.0',
+210 silly addNameRange     '0.6.1',
+210 silly addNameRange     '0.5.2',
+210 silly addNameRange     '1.0.0',
+210 silly addNameRange     '1.0.1',
+210 silly addNameRange     '1.0.2',
+210 silly addNameRange     '1.0.3',
+210 silly addNameRange     '1.0.4',
+210 silly addNameRange     '1.0.5',
+210 silly addNameRange     '1.1.0',
+210 silly addNameRange     '1.1.1',
+210 silly addNameRange     '1.2.0',
+210 silly addNameRange     '1.3.0',
+210 silly addNameRange     '1.3.1',
+210 silly addNameRange     '1.3.2',
+210 silly addNameRange     '2.0.0',
+210 silly addNameRange     '2.1.0',
+210 silly addNameRange     '2.2.0',
+210 silly addNameRange     '2.3.0',
+210 silly addNameRange     '2.4.0',
+210 silly addNameRange     '2.5.0',
+210 silly addNameRange     '2.5.1',
+210 silly addNameRange     '2.6.0',
+210 silly addNameRange     '2.7.0',
+210 silly addNameRange     '2.7.1',
+210 silly addNameRange     '2.8.0',
+210 silly addNameRange     '2.8.1',
+210 silly addNameRange     '2.9.0' ] ]
+211 verbose addNamed [ 'commander', '2.9.0' ]
+212 verbose addNamed [ '2.9.0', '2.9.0' ]
+213 silly lockFile 07267fc6-commander-2-9-0 commander@2.9.0
+214 verbose lock commander@2.9.0 /root/.npm/07267fc6-commander-2-9-0.lock
+215 silly addNameRange number 2 { name: 'css-resolve-import',
+215 silly addNameRange   range: '>=0.1.1-0 <0.2.0-0',
+215 silly addNameRange   hasData: true }
+216 silly addNameRange versions [ 'css-resolve-import',
+216 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.1.0', '0.1.1' ] ]
+217 verbose addNamed [ 'css-resolve-import', '0.1.1' ]
+218 verbose addNamed [ '0.1.1', '0.1.1' ]
+219 silly lockFile 9a2e0b56-css-resolve-import-0-1-1 css-resolve-import@0.1.1
+220 verbose lock css-resolve-import@0.1.1 /root/.npm/9a2e0b56-css-resolve-import-0-1-1.lock
+221 silly addNameRange number 2 { name: 'glob', range: '>=5.0.14-0 <6.0.0-0', hasData: true }
+222 silly addNameRange versions [ 'glob',
+222 silly addNameRange   [ '1.1.0',
+222 silly addNameRange     '2.0.9',
+222 silly addNameRange     '2.0.8',
+222 silly addNameRange     '2.0.7',
+222 silly addNameRange     '2.1.0',
+222 silly addNameRange     '3.0.0',
+222 silly addNameRange     '3.0.1',
+222 silly addNameRange     '3.1.0',
+222 silly addNameRange     '3.1.1',
+222 silly addNameRange     '3.1.2',
+222 silly addNameRange     '3.1.3',
+222 silly addNameRange     '3.1.4',
+222 silly addNameRange     '3.1.5',
+222 silly addNameRange     '3.1.6',
+222 silly addNameRange     '3.1.7',
+222 silly addNameRange     '3.1.9',
+222 silly addNameRange     '3.1.10',
+222 silly addNameRange     '3.1.11',
+222 silly addNameRange     '3.1.12',
+222 silly addNameRange     '3.1.13',
+222 silly addNameRange     '3.1.14',
+222 silly addNameRange     '3.1.15',
+222 silly addNameRange     '3.1.16',
+222 silly addNameRange     '3.1.17',
+222 silly addNameRange     '3.1.18',
+222 silly addNameRange     '3.1.19',
+222 silly addNameRange     '3.1.20',
+222 silly addNameRange     '3.1.21',
+222 silly addNameRange     '3.2.0',
+222 silly addNameRange     '3.2.1',
+222 silly addNameRange     '3.2.3',
+222 silly addNameRange     '3.2.4',
+222 silly addNameRange     '3.2.5',
+222 silly addNameRange     '3.2.6',
+222 silly addNameRange     '3.2.7',
+222 silly addNameRange     '3.2.8',
+222 silly addNameRange     '3.2.9',
+222 silly addNameRange     '3.2.10',
+222 silly addNameRange     '3.2.11',
+222 silly addNameRange     '4.0.0',
+222 silly addNameRange     '4.0.1',
+222 silly addNameRange     '4.0.2',
+222 silly addNameRange     '4.0.3',
+222 silly addNameRange     '4.0.4',
+222 silly addNameRange     '4.0.5',
+222 silly addNameRange     '4.0.6',
+222 silly addNameRange     '4.1.2-beta',
+222 silly addNameRange     '4.1.2',
+222 silly addNameRange     '4.1.3',
+222 silly addNameRange     '4.1.4',
+222 silly addNameRange     '4.1.5',
+222 silly addNameRange     '4.1.6',
+222 silly addNameRange     '4.2.0',
+222 silly addNameRange     '4.2.1',
+222 silly addNameRange     '4.2.2',
+222 silly addNameRange     '4.3.0',
+222 silly addNameRange     '4.3.1',
+222 silly addNameRange     '4.3.2',
+222 silly addNameRange     '4.3.3',
+222 silly addNameRange     '4.3.4',
+222 silly addNameRange     '4.3.5',
+222 silly addNameRange     '4.4.0',
+222 silly addNameRange     '4.4.2',
+222 silly addNameRange     '4.5.0',
+222 silly addNameRange     '5.0.0',
+222 silly addNameRange     '4.5.1',
+222 silly addNameRange     '5.0.1',
+222 silly addNameRange     '4.5.2',
+222 silly addNameRange     '5.0.2',
+222 silly addNameRange     '4.5.3',
+222 silly addNameRange     '5.0.3',
+222 silly addNameRange     '5.0.4',
+222 silly addNameRange     '5.0.5',
+222 silly addNameRange     '5.0.6',
+222 silly addNameRange     '5.0.7',
+222 silly addNameRange     '5.0.9',
+222 silly addNameRange     '5.0.10',
+222 silly addNameRange     '5.0.11',
+222 silly addNameRange     '5.0.12',
+222 silly addNameRange     '5.0.13',
+222 silly addNameRange     '5.0.14',
+222 silly addNameRange     '5.0.15',
+222 silly addNameRange     '6.0.1' ] ]
+223 verbose addNamed [ 'glob', '5.0.15' ]
+224 verbose addNamed [ '5.0.15', '5.0.15' ]
+225 silly lockFile 03e27dc7-glob-5-0-15 glob@5.0.15
+226 verbose lock glob@5.0.15 /root/.npm/03e27dc7-glob-5-0-15.lock
+227 silly addNameRange number 2 { name: 'hogan.js', range: '>=3.0.2-0 <4.0.0-0', hasData: true }
+228 silly addNameRange versions [ 'hogan.js',
+228 silly addNameRange   [ '1.0.0',
+228 silly addNameRange     '1.0.2',
+228 silly addNameRange     '1.0.4-dev',
+228 silly addNameRange     '1.0.5-dev',
+228 silly addNameRange     '2.0.0',
+228 silly addNameRange     '3.0.1',
+228 silly addNameRange     '3.0.2' ] ]
+229 verbose addNamed [ 'hogan.js', '3.0.2' ]
+230 verbose addNamed [ '3.0.2', '3.0.2' ]
+231 silly lockFile a88dd43a-hogan-js-3-0-2 hogan.js@3.0.2
+232 verbose lock hogan.js@3.0.2 /root/.npm/a88dd43a-hogan-js-3-0-2.lock
+233 http 304 https://registry.npmjs.org/uglify-js
+234 silly registry.get cb [ 304,
+234 silly registry.get   { date: 'Tue, 24 Nov 2015 21:35:26 GMT',
+234 silly registry.get     via: '1.1 varnish',
+234 silly registry.get     'cache-control': 'max-age=60',
+234 silly registry.get     etag: '"6981GGNNJXPBCEW88RJW92ACH"',
+234 silly registry.get     age: '25',
+234 silly registry.get     connection: 'keep-alive',
+234 silly registry.get     'x-served-by': 'cache-jfk1022-JFK',
+234 silly registry.get     'x-cache': 'HIT',
+234 silly registry.get     'x-cache-hits': '5',
+234 silly registry.get     'x-timer': 'S1448400926.527186,VS0,VE0',
+234 silly registry.get     vary: 'Accept' } ]
+235 verbose etag https://registry.npmjs.org/uglify-js from cache
+236 http 304 https://registry.npmjs.org/sqwish
+237 silly registry.get cb [ 304,
+237 silly registry.get   { date: 'Tue, 24 Nov 2015 21:35:26 GMT',
+237 silly registry.get     via: '1.1 varnish',
+237 silly registry.get     'cache-control': 'max-age=60',
+237 silly registry.get     etag: '"5BV7DJP5MHCEUT76GBJJ803MR"',
+237 silly registry.get     age: '13',
+237 silly registry.get     connection: 'keep-alive',
+237 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
+237 silly registry.get     'x-cache': 'HIT',
+237 silly registry.get     'x-cache-hits': '1',
+237 silly registry.get     'x-timer': 'S1448400926.526415,VS0,VE1',
+237 silly registry.get     vary: 'Accept' } ]
+238 verbose etag https://registry.npmjs.org/sqwish from cache
+239 silly lockFile 07267fc6-commander-2-9-0 commander@2.9.0
+240 silly lockFile 07267fc6-commander-2-9-0 commander@2.9.0
+241 silly lockFile f6e43770-commander-2-8-1 commander@^2.8.1
+242 silly lockFile f6e43770-commander-2-8-1 commander@^2.8.1
+243 silly lockFile 9a2e0b56-css-resolve-import-0-1-1 css-resolve-import@0.1.1
+244 silly lockFile 9a2e0b56-css-resolve-import-0-1-1 css-resolve-import@0.1.1
+245 silly lockFile 0a86c72c-css-resolve-import-0-1-1 css-resolve-import@^0.1.1
+246 silly lockFile 0a86c72c-css-resolve-import-0-1-1 css-resolve-import@^0.1.1
+247 silly lockFile 03e27dc7-glob-5-0-15 glob@5.0.15
+248 silly lockFile 03e27dc7-glob-5-0-15 glob@5.0.15
+249 silly lockFile a88dd43a-hogan-js-3-0-2 hogan.js@3.0.2
+250 silly lockFile a88dd43a-hogan-js-3-0-2 hogan.js@3.0.2
+251 silly addNameRange number 2 { name: 'uglify-js',
+251 silly addNameRange   range: '>=2.4.24-0 <3.0.0-0',
+251 silly addNameRange   hasData: true }
+252 silly addNameRange versions [ 'uglify-js',
+252 silly addNameRange   [ '0.0.1',
+252 silly addNameRange     '0.0.2',
+252 silly addNameRange     '0.0.3',
+252 silly addNameRange     '0.0.4',
+252 silly addNameRange     '0.0.5',
+252 silly addNameRange     '1.0.1',
+252 silly addNameRange     '1.0.2',
+252 silly addNameRange     '1.0.3',
+252 silly addNameRange     '1.0.4',
+252 silly addNameRange     '1.0.5',
+252 silly addNameRange     '1.0.6',
+252 silly addNameRange     '1.0.7',
+252 silly addNameRange     '1.1.0',
+252 silly addNameRange     '1.1.1',
+252 silly addNameRange     '1.2.0',
+252 silly addNameRange     '1.2.1',
+252 silly addNameRange     '1.2.2',
+252 silly addNameRange     '1.2.3',
+252 silly addNameRange     '1.2.4',
+252 silly addNameRange     '1.2.5',
+252 silly addNameRange     '1.2.6',
+252 silly addNameRange     '1.3.0',
+252 silly addNameRange     '1.3.1',
+252 silly addNameRange     '1.3.2',
+252 silly addNameRange     '1.3.3',
+252 silly addNameRange     '1.3.4',
+252 silly addNameRange     '2.2.0',
+252 silly addNameRange     '2.2.1',
+252 silly addNameRange     '2.2.2',
+252 silly addNameRange     '2.2.3',
+252 silly addNameRange     '2.2.4',
+252 silly addNameRange     '2.2.5',
+252 silly addNameRange     '2.3.0',
+252 silly addNameRange     '2.3.1',
+252 silly addNameRange     '2.3.2',
+252 silly addNameRange     '2.3.3',
+252 silly addNameRange     '2.3.4',
+252 silly addNameRange     '2.3.5',
+252 silly addNameRange     '2.3.6',
+252 silly addNameRange     '1.3.5',
+252 silly addNameRange     '2.4.0',
+252 silly addNameRange     '2.4.1',
+252 silly addNameRange     '2.4.2',
+252 silly addNameRange     '2.4.3',
+252 silly addNameRange     '2.4.4',
+252 silly addNameRange     '2.4.5',
+252 silly addNameRange     '2.4.6',
+252 silly addNameRange     '2.4.7',
+252 silly addNameRange     '2.4.8',
+252 silly addNameRange     '2.4.9',
+252 silly addNameRange     '2.4.10',
+252 silly addNameRange     '2.4.11',
+252 silly addNameRange     '2.4.12',
+252 silly addNameRange     '2.4.13',
+252 silly addNameRange     '2.4.14',
+252 silly addNameRange     '2.4.15',
+252 silly addNameRange     '2.4.16',
+252 silly addNameRange     '2.4.17',
+252 silly addNameRange     '2.4.18',
+252 silly addNameRange     '2.4.19',
+252 silly addNameRange     '2.4.20',
+252 silly addNameRange     '2.4.21',
+252 silly addNameRange     '2.4.22',
+252 silly addNameRange     '2.4.23',
+252 silly addNameRange     '2.4.24',
+252 silly addNameRange     '2.5.0',
+252 silly addNameRange     '2.6.0',
+252 silly addNameRange     '2.6.1' ] ]
+253 verbose addNamed [ 'uglify-js', '2.6.1' ]
+254 verbose addNamed [ '2.6.1', '2.6.1' ]
+255 silly lockFile 67278b19-uglify-js-2-6-1 uglify-js@2.6.1
+256 verbose lock uglify-js@2.6.1 /root/.npm/67278b19-uglify-js-2-6-1.lock
+257 silly addNameRange number 2 { name: 'sqwish', range: '>=0.2.2-0 <0.3.0-0', hasData: true }
+258 silly addNameRange versions [ 'sqwish',
+258 silly addNameRange   [ '0.0.1',
+258 silly addNameRange     '0.0.2',
+258 silly addNameRange     '0.0.3',
+258 silly addNameRange     '0.0.4',
+258 silly addNameRange     '0.0.5',
+258 silly addNameRange     '0.0.6',
+258 silly addNameRange     '0.0.7',
+258 silly addNameRange     '0.0.8',
+258 silly addNameRange     '0.0.9',
+258 silly addNameRange     '0.1.0',
+258 silly addNameRange     '0.1.1',
+258 silly addNameRange     '0.1.2',
+258 silly addNameRange     '0.2.0',
+258 silly addNameRange     '0.2.1',
+258 silly addNameRange     '0.2.2' ] ]
+259 verbose addNamed [ 'sqwish', '0.2.2' ]
+260 verbose addNamed [ '0.2.2', '0.2.2' ]
+261 silly lockFile 138764a9-sqwish-0-2-2 sqwish@0.2.2
+262 verbose lock sqwish@0.2.2 /root/.npm/138764a9-sqwish-0-2-2.lock
+263 silly lockFile 6285da20-glob-5-0-14 glob@^5.0.14
+264 silly lockFile 6285da20-glob-5-0-14 glob@^5.0.14
+265 silly lockFile 3a3adee7-hogan-js-3-0-2 hogan.js@^3.0.2
+266 silly lockFile 3a3adee7-hogan-js-3-0-2 hogan.js@^3.0.2
+267 http 304 https://registry.npmjs.org/fmerge
+268 silly registry.get cb [ 304,
+268 silly registry.get   { date: 'Tue, 24 Nov 2015 21:35:26 GMT',
+268 silly registry.get     via: '1.1 varnish',
+268 silly registry.get     'cache-control': 'max-age=60',
+268 silly registry.get     etag: '"F3QJM7T3XOPQOV25VLEDY9NJJ"',
+268 silly registry.get     age: '13',
+268 silly registry.get     connection: 'keep-alive',
+268 silly registry.get     'x-served-by': 'cache-jfk1020-JFK',
+268 silly registry.get     'x-cache': 'HIT',
+268 silly registry.get     'x-cache-hits': '1',
+268 silly registry.get     'x-timer': 'S1448400926.540364,VS0,VE1',
+268 silly registry.get     vary: 'Accept' } ]
+269 verbose etag https://registry.npmjs.org/fmerge from cache
+270 silly lockFile 67278b19-uglify-js-2-6-1 uglify-js@2.6.1
+271 silly lockFile 67278b19-uglify-js-2-6-1 uglify-js@2.6.1
+272 silly lockFile 138764a9-sqwish-0-2-2 sqwish@0.2.2
+273 silly lockFile 138764a9-sqwish-0-2-2 sqwish@0.2.2
+274 silly addNameRange number 2 { name: 'fmerge', range: '>=1.2.0-0 <2.0.0-0', hasData: true }
+275 silly addNameRange versions [ 'fmerge',
+275 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.1.0', '1.1.1', '1.2.0' ] ]
+276 verbose addNamed [ 'fmerge', '1.2.0' ]
+277 verbose addNamed [ '1.2.0', '1.2.0' ]
+278 silly lockFile 16e697e5-fmerge-1-2-0 fmerge@1.2.0
+279 verbose lock fmerge@1.2.0 /root/.npm/16e697e5-fmerge-1-2-0.lock
+280 silly lockFile 5bc39e92-uglify-js-2-4-24 uglify-js@^2.4.24
+281 silly lockFile 5bc39e92-uglify-js-2-4-24 uglify-js@^2.4.24
+282 silly lockFile c6870a7d-sqwish-0-2-2 sqwish@~0.2.2
+283 silly lockFile c6870a7d-sqwish-0-2-2 sqwish@~0.2.2
+284 silly lockFile 16e697e5-fmerge-1-2-0 fmerge@1.2.0
+285 silly lockFile 16e697e5-fmerge-1-2-0 fmerge@1.2.0
+286 silly lockFile 3b9d73cd-fmerge-1-2-0 fmerge@^1.2.0
+287 silly lockFile 3b9d73cd-fmerge-1-2-0 fmerge@^1.2.0
+288 silly resolved [ { name: 'commander',
+288 silly resolved     version: '2.9.0',
+288 silly resolved     description: 'the complete solution for node.js command-line programs',
+288 silly resolved     keywords: [ 'command', 'option', 'parser' ],
+288 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+288 silly resolved     license: 'MIT',
+288 silly resolved     repository:
+288 silly resolved      { type: 'git',
+288 silly resolved        url: 'git+https://github.com/tj/commander.js.git' },
+288 silly resolved     devDependencies: { should: '>= 0.0.1', sinon: '>=1.17.1' },
+288 silly resolved     scripts: { test: 'make test' },
+288 silly resolved     main: 'index',
+288 silly resolved     engines: { node: '>= 0.6.x' },
+288 silly resolved     files: [ 'index.js' ],
+288 silly resolved     dependencies: { 'graceful-readlink': '>= 1.0.0' },
+288 silly resolved     gitHead: 'b2aad7a8471d434593a85306aa73777a526e9f75',
+288 silly resolved     bugs: { url: 'https://github.com/tj/commander.js/issues' },
+288 silly resolved     homepage: 'https://github.com/tj/commander.js#readme',
+288 silly resolved     _id: 'commander@2.9.0',
+288 silly resolved     _shasum: '9c99094176e12240cb22d6c5146098400fe0f7d4',
+288 silly resolved     _from: 'commander@^2.8.1',
+288 silly resolved     _npmVersion: '2.11.3',
+288 silly resolved     _nodeVersion: '0.12.7',
+288 silly resolved     _npmUser: { name: 'zhiyelee', email: 'zhiyelee@gmail.com' },
+288 silly resolved     dist:
+288 silly resolved      { shasum: '9c99094176e12240cb22d6c5146098400fe0f7d4',
+288 silly resolved        tarball: 'http://registry.npmjs.org/commander/-/commander-2.9.0.tgz' },
+288 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+288 silly resolved     directories: {},
+288 silly resolved     _resolved: 'https://registry.npmjs.org/commander/-/commander-2.9.0.tgz',
+288 silly resolved     readme: 'ERROR: No README data found!' },
+288 silly resolved   { author:
+288 silly resolved      { name: 'Isaac Z. Schlueter',
+288 silly resolved        email: 'i@izs.me',
+288 silly resolved        url: 'http://blog.izs.me/' },
+288 silly resolved     name: 'glob',
+288 silly resolved     description: 'a little globber',
+288 silly resolved     version: '5.0.15',
+288 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-glob.git' },
+288 silly resolved     main: 'glob.js',
+288 silly resolved     files: [ 'glob.js', 'sync.js', 'common.js' ],
+288 silly resolved     engines: { node: '*' },
+288 silly resolved     dependencies:
+288 silly resolved      { inflight: '^1.0.4',
+288 silly resolved        inherits: '2',
+288 silly resolved        minimatch: '2 || 3',
+288 silly resolved        once: '^1.3.0',
+288 silly resolved        'path-is-absolute': '^1.0.0' },
+288 silly resolved     devDependencies: { mkdirp: '0', rimraf: '^2.2.8', tap: '^1.1.4', tick: '0.0.6' },
+288 silly resolved     scripts:
+288 silly resolved      { prepublish: 'npm run benchclean',
+288 silly resolved        profclean: 'rm -f v8.log profile.txt',
+288 silly resolved        test: 'tap test/*.js --cov',
+288 silly resolved        'test-regen': 'npm run profclean && TEST_REGEN=1 node test/00-setup.js',
+288 silly resolved        bench: 'bash benchmark.sh',
+288 silly resolved        prof: 'bash prof.sh && cat profile.txt',
+288 silly resolved        benchclean: 'node benchclean.js' },
+288 silly resolved     license: 'ISC',
+288 silly resolved     gitHead: '3a7e71d453dd80e75b196fd262dd23ed54beeceb',
+288 silly resolved     bugs: { url: 'https://github.com/isaacs/node-glob/issues' },
+288 silly resolved     homepage: 'https://github.com/isaacs/node-glob#readme',
+288 silly resolved     _id: 'glob@5.0.15',
+288 silly resolved     _shasum: '1bc936b9e02f4a603fcc222ecf7633d30b8b93b1',
+288 silly resolved     _from: 'glob@^5.0.14',
+288 silly resolved     _npmVersion: '3.3.2',
+288 silly resolved     _nodeVersion: '4.0.0',
+288 silly resolved     _npmUser: { name: 'isaacs', email: 'isaacs@npmjs.com' },
+288 silly resolved     dist:
+288 silly resolved      { shasum: '1bc936b9e02f4a603fcc222ecf7633d30b8b93b1',
+288 silly resolved        tarball: 'http://registry.npmjs.org/glob/-/glob-5.0.15.tgz' },
+288 silly resolved     maintainers: [ [Object] ],
+288 silly resolved     directories: {},
+288 silly resolved     _resolved: 'https://registry.npmjs.org/glob/-/glob-5.0.15.tgz',
+288 silly resolved     readme: 'ERROR: No README data found!' },
+288 silly resolved   { name: 'css-resolve-import',
+288 silly resolved     version: '0.1.1',
+288 silly resolved     description: 'Resolves @import statements in CSS',
+288 silly resolved     main: 'index.js',
+288 silly resolved     scripts: { test: 'mocha' },
+288 silly resolved     repository:
+288 silly resolved      { type: 'git',
+288 silly resolved        url: 'git+https://github.com/fizker/css-resolve-import.git' },
+288 silly resolved     keywords: [ 'css', 'import', 'join', 'resolve' ],
+288 silly resolved     author: { name: 'Benjamin Horsleben' },
+288 silly resolved     license: 'WTFPL',
+288 silly resolved     bugs: { url: 'https://github.com/fizker/css-resolve-import/issues' },
+288 silly resolved     homepage: 'https://github.com/fizker/css-resolve-import',
+288 silly resolved     devDependencies:
+288 silly resolved      { chai: '^1.10.0',
+288 silly resolved        'finc-chai-helpers': '^0.1.0',
+288 silly resolved        fzkes: '^0.14.1',
+288 silly resolved        mocha: '^2.1.0' },
+288 silly resolved     gitHead: 'a1344387ff7dcd2d377094a7d02f3fa535a9fbae',
+288 silly resolved     _id: 'css-resolve-import@0.1.1',
+288 silly resolved     _shasum: 'd2e3e0905685c54a678582fb780d3ca1702f8eea',
+288 silly resolved     _from: 'css-resolve-import@^0.1.1',
+288 silly resolved     _npmVersion: '2.11.3',
+288 silly resolved     _nodeVersion: '0.12.7',
+288 silly resolved     _npmUser: { name: 'fizker', email: 'benjamin@fizkerinc.dk' },
+288 silly resolved     maintainers: [ [Object] ],
+288 silly resolved     dist:
+288 silly resolved      { shasum: 'd2e3e0905685c54a678582fb780d3ca1702f8eea',
+288 silly resolved        tarball: 'http://registry.npmjs.org/css-resolve-import/-/css-resolve-import-0.1.1.tgz' },
+288 silly resolved     directories: {},
+288 silly resolved     _resolved: 'https://registry.npmjs.org/css-resolve-import/-/css-resolve-import-0.1.1.tgz',
+288 silly resolved     readme: 'ERROR: No README data found!' },
+288 silly resolved   { name: 'hogan.js',
+288 silly resolved     description: 'A mustache compiler.',
+288 silly resolved     version: '3.0.2',
+288 silly resolved     keywords: [ 'mustache', 'template' ],
+288 silly resolved     main: './lib/hogan.js',
+288 silly resolved     homepage: 'http://twitter.github.com/hogan.js/',
+288 silly resolved     author: { name: 'Twitter Inc.' },
+288 silly resolved     repository: { type: 'git', url: 'https://github.com/twitter/hogan.js.git' },
+288 silly resolved     licenses: [ [Object] ],
+288 silly resolved     dependencies: { nopt: '1.0.10', mkdirp: '0.3.0' },
+288 silly resolved     devDependencies:
+288 silly resolved      { 'uglify-js': '2.x',
+288 silly resolved        jsdom: '0.3.4',
+288 silly resolved        step: '0.0.5',
+288 silly resolved        rimraf: '2.0.1' },
+288 silly resolved     bin: { hulk: './bin/hulk' },
+288 silly resolved     gitHead: 'c52d142643e764e3f82e8ad3f2d44a46b82d1640',
+288 silly resolved     bugs: { url: 'https://github.com/twitter/hogan.js/issues' },
+288 silly resolved     _id: 'hogan.js@3.0.2',
+288 silly resolved     scripts: {},
+288 silly resolved     _shasum: '4cd9e1abd4294146e7679e41d7898732b02c7bfd',
+288 silly resolved     _from: 'hogan.js@^3.0.2',
+288 silly resolved     _npmVersion: '1.4.15',
+288 silly resolved     _npmUser: { name: 'sayrer', email: 'sayrer@gmail.com' },
+288 silly resolved     maintainers: [ [Object], [Object] ],
+288 silly resolved     dist:
+288 silly resolved      { shasum: '4cd9e1abd4294146e7679e41d7898732b02c7bfd',
+288 silly resolved        tarball: 'http://registry.npmjs.org/hogan.js/-/hogan.js-3.0.2.tgz' },
+288 silly resolved     directories: {},
+288 silly resolved     _resolved: 'https://registry.npmjs.org/hogan.js/-/hogan.js-3.0.2.tgz',
+288 silly resolved     readme: 'ERROR: No README data found!' },
+288 silly resolved   { name: 'uglify-js',
+288 silly resolved     description: 'JavaScript parser, mangler/compressor and beautifier toolkit',
+288 silly resolved     homepage: 'http://lisperator.net/uglifyjs',
+288 silly resolved     author:
+288 silly resolved      { name: 'Mihai Bazon',
+288 silly resolved        email: 'mihai.bazon@gmail.com',
+288 silly resolved        url: 'http://lisperator.net/' },
+288 silly resolved     license: 'BSD-2-Clause',
+288 silly resolved     version: '2.6.1',
+288 silly resolved     engines: { node: '>=0.8.0' },
+288 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+288 silly resolved     repository:
+288 silly resolved      { type: 'git',
+288 silly resolved        url: 'git+https://github.com/mishoo/UglifyJS2.git' },
+288 silly resolved     bugs: { url: 'https://github.com/mishoo/UglifyJS2/issues' },
+288 silly resolved     main: 'tools/node.js',
+288 silly resolved     bin: { uglifyjs: 'bin/uglifyjs' },
+288 silly resolved     files: [ 'bin', 'lib', 'tools', 'LICENSE' ],
+288 silly resolved     dependencies:
+288 silly resolved      { async: '~0.2.6',
+288 silly resolved        'source-map': '~0.5.1',
+288 silly resolved        'uglify-to-browserify': '~1.0.0',
+288 silly resolved        yargs: '~3.10.0' },
+288 silly resolved     devDependencies:
+288 silly resolved      { acorn: '~0.6.0',
+288 silly resolved        escodegen: '~1.3.3',
+288 silly resolved        esfuzz: '~0.3.1',
+288 silly resolved        estraverse: '~1.5.1' },
+288 silly resolved     browserify: { transform: [Object] },
+288 silly resolved     scripts:
+288 silly resolved      { shrinkwrap: 'rm ./npm-shrinkwrap.json; rm -rf ./node_modules; npm i && npm shrinkwrap && npm outdated',
+288 silly resolved        test: 'node test/run-tests.js' },
+288 silly resolved     gitHead: '15b5f70338695c435cab05b7ac2de29cad230360',
+288 silly resolved     _id: 'uglify-js@2.6.1',
+288 silly resolved     _shasum: 'edbbe1888ba3525ded3a7bf836b30b3405d3161b',
+288 silly resolved     _from: 'uglify-js@^2.4.24',
+288 silly resolved     _npmVersion: '2.14.4',
+288 silly resolved     _nodeVersion: '4.1.1',
+288 silly resolved     _npmUser: { name: 'mishoo', email: 'mihai.bazon@gmail.com' },
+288 silly resolved     dist:
+288 silly resolved      { shasum: 'edbbe1888ba3525ded3a7bf836b30b3405d3161b',
+288 silly resolved        tarball: 'http://registry.npmjs.org/uglify-js/-/uglify-js-2.6.1.tgz' },
+288 silly resolved     directories: {},
+288 silly resolved     _resolved: 'https://registry.npmjs.org/uglify-js/-/uglify-js-2.6.1.tgz',
+288 silly resolved     readme: 'ERROR: No README data found!' },
+288 silly resolved   { name: 'sqwish',
+288 silly resolved     description: 'a tool for compressing CSS',
+288 silly resolved     homepage: 'https://github.com/ded/sqwish',
+288 silly resolved     version: '0.2.2',
+288 silly resolved     author: { name: 'Dustin Diaz', email: '@ded' },
+288 silly resolved     keywords: [ 'minify', 'css', 'compress' ],
+288 silly resolved     main: 'src/index.js',
+288 silly resolved     engines: { node: '>= 0.4.1' },
+288 silly resolved     directories: { lib: 'src', bin: 'bin' },
+288 silly resolved     devDependencies: { 'sink-test': '>= 0.0.6' },
+288 silly resolved     scripts: { test: 'node tests/tests.js' },
+288 silly resolved     preferGlobal: true,
+288 silly resolved     bin: { sqwish: 'bin/sqwish' },
+288 silly resolved     _id: 'sqwish@0.2.2',
+288 silly resolved     dist:
+288 silly resolved      { shasum: '00fe2668104f1228b5bb7ee739ef60121bbcb057',
+288 silly resolved        tarball: 'http://registry.npmjs.org/sqwish/-/sqwish-0.2.2.tgz' },
+288 silly resolved     _from: 'sqwish@~0.2.2',
+288 silly resolved     _npmVersion: '1.3.24',
+288 silly resolved     _npmUser: { name: 'ded', email: 'polvero@gmail.com' },
+288 silly resolved     maintainers: [ [Object], [Object] ],
+288 silly resolved     _shasum: '00fe2668104f1228b5bb7ee739ef60121bbcb057',
+288 silly resolved     _resolved: 'https://registry.npmjs.org/sqwish/-/sqwish-0.2.2.tgz',
+288 silly resolved     readme: 'ERROR: No README data found!' },
+288 silly resolved   { name: 'fmerge',
+288 silly resolved     version: '1.2.0',
+288 silly resolved     description: 'A tool for merging objects.',
+288 silly resolved     main: 'index.js',
+288 silly resolved     devDependencies: { mocha: '^1.20.0', chai: '^1.9.1' },
+288 silly resolved     scripts: { test: 'mocha', install: 'node install.js' },
+288 silly resolved     repository: { type: 'git', url: 'git://github.com/fizker/merge.git' },
+288 silly resolved     keywords: [ 'merge', 'combine' ],
+288 silly resolved     author: { name: 'Benjamin Horsleben' },
+288 silly resolved     license: 'WTFPL',
+288 silly resolved     bugs: { url: 'https://github.com/fizker/merge/issues' },
+288 silly resolved     homepage: 'https://github.com/fizker/merge',
+288 silly resolved     _id: 'fmerge@1.2.0',
+288 silly resolved     _shasum: '36e99d2ae255e3ee1af666b4df780553671cf692',
+288 silly resolved     _from: 'fmerge@^1.2.0',
+288 silly resolved     _npmVersion: '1.4.9',
+288 silly resolved     _npmUser: { name: 'fizker', email: 'benjamin@fizkerinc.dk' },
+288 silly resolved     maintainers: [ [Object] ],
+288 silly resolved     dist:
+288 silly resolved      { shasum: '36e99d2ae255e3ee1af666b4df780553671cf692',
+288 silly resolved        tarball: 'http://registry.npmjs.org/fmerge/-/fmerge-1.2.0.tgz' },
+288 silly resolved     directories: {},
+288 silly resolved     _resolved: 'https://registry.npmjs.org/fmerge/-/fmerge-1.2.0.tgz',
+288 silly resolved     readme: 'ERROR: No README data found!' } ]
+289 info install commander@2.9.0 into /usr/local/lib/node_modules/minifier
+290 info install glob@5.0.15 into /usr/local/lib/node_modules/minifier
+291 info install css-resolve-import@0.1.1 into /usr/local/lib/node_modules/minifier
+292 info install hogan.js@3.0.2 into /usr/local/lib/node_modules/minifier
+293 info install uglify-js@2.6.1 into /usr/local/lib/node_modules/minifier
+294 info install sqwish@0.2.2 into /usr/local/lib/node_modules/minifier
+295 info install fmerge@1.2.0 into /usr/local/lib/node_modules/minifier
+296 info installOne commander@2.9.0
+297 info installOne glob@5.0.15
+298 info installOne css-resolve-import@0.1.1
+299 info installOne hogan.js@3.0.2
+300 info installOne uglify-js@2.6.1
+301 info installOne sqwish@0.2.2
+302 info installOne fmerge@1.2.0
+303 verbose lib/node_modules/minifier/node_modules/commander unbuild
+304 verbose lib/node_modules/minifier/node_modules/glob unbuild
+305 verbose lib/node_modules/minifier/node_modules/css-resolve-import unbuild
+306 verbose lib/node_modules/minifier/node_modules/hogan.js unbuild
+307 verbose lib/node_modules/minifier/node_modules/uglify-js unbuild
+308 verbose lib/node_modules/minifier/node_modules/sqwish unbuild
+309 verbose lib/node_modules/minifier/node_modules/fmerge unbuild
+310 verbose tar unpack /root/.npm/commander/2.9.0/package.tgz
+311 silly lockFile 5d226c1a--minifier-node-modules-commander tar:///usr/local/lib/node_modules/minifier/node_modules/commander
+312 verbose lock tar:///usr/local/lib/node_modules/minifier/node_modules/commander /root/.npm/5d226c1a--minifier-node-modules-commander.lock
+313 silly lockFile 7a78e06c--npm-commander-2-9-0-package-tgz tar:///root/.npm/commander/2.9.0/package.tgz
+314 verbose lock tar:///root/.npm/commander/2.9.0/package.tgz /root/.npm/7a78e06c--npm-commander-2-9-0-package-tgz.lock
+315 verbose tar unpack /root/.npm/glob/5.0.15/package.tgz
+316 silly lockFile f6b24ca6-dules-minifier-node-modules-glob tar:///usr/local/lib/node_modules/minifier/node_modules/glob
+317 verbose lock tar:///usr/local/lib/node_modules/minifier/node_modules/glob /root/.npm/f6b24ca6-dules-minifier-node-modules-glob.lock
+318 silly lockFile 602085ab-root-npm-glob-5-0-15-package-tgz tar:///root/.npm/glob/5.0.15/package.tgz
+319 verbose lock tar:///root/.npm/glob/5.0.15/package.tgz /root/.npm/602085ab-root-npm-glob-5-0-15-package-tgz.lock
+320 verbose tar unpack /root/.npm/css-resolve-import/0.1.1/package.tgz
+321 silly lockFile 475bb69a--node-modules-css-resolve-import tar:///usr/local/lib/node_modules/minifier/node_modules/css-resolve-import
+322 verbose lock tar:///usr/local/lib/node_modules/minifier/node_modules/css-resolve-import /root/.npm/475bb69a--node-modules-css-resolve-import.lock
+323 silly lockFile 30bf241d-resolve-import-0-1-1-package-tgz tar:///root/.npm/css-resolve-import/0.1.1/package.tgz
+324 verbose lock tar:///root/.npm/css-resolve-import/0.1.1/package.tgz /root/.npm/30bf241d-resolve-import-0-1-1-package-tgz.lock
+325 verbose tar unpack /root/.npm/hogan.js/3.0.2/package.tgz
+326 silly lockFile 721b47e2-s-minifier-node-modules-hogan-js tar:///usr/local/lib/node_modules/minifier/node_modules/hogan.js
+327 verbose lock tar:///usr/local/lib/node_modules/minifier/node_modules/hogan.js /root/.npm/721b47e2-s-minifier-node-modules-hogan-js.lock
+328 silly lockFile 10fb42e9-t-npm-hogan-js-3-0-2-package-tgz tar:///root/.npm/hogan.js/3.0.2/package.tgz
+329 verbose lock tar:///root/.npm/hogan.js/3.0.2/package.tgz /root/.npm/10fb42e9-t-npm-hogan-js-3-0-2-package-tgz.lock
+330 verbose tar unpack /root/.npm/uglify-js/2.6.1/package.tgz
+331 silly lockFile 5bbaea46--minifier-node-modules-uglify-js tar:///usr/local/lib/node_modules/minifier/node_modules/uglify-js
+332 verbose lock tar:///usr/local/lib/node_modules/minifier/node_modules/uglify-js /root/.npm/5bbaea46--minifier-node-modules-uglify-js.lock
+333 silly lockFile 5c2f0e4f--npm-uglify-js-2-6-1-package-tgz tar:///root/.npm/uglify-js/2.6.1/package.tgz
+334 verbose lock tar:///root/.npm/uglify-js/2.6.1/package.tgz /root/.npm/5c2f0e4f--npm-uglify-js-2-6-1-package-tgz.lock
+335 verbose tar unpack /root/.npm/sqwish/0.2.2/package.tgz
+336 silly lockFile 4a2f6fdb-les-minifier-node-modules-sqwish tar:///usr/local/lib/node_modules/minifier/node_modules/sqwish
+337 verbose lock tar:///usr/local/lib/node_modules/minifier/node_modules/sqwish /root/.npm/4a2f6fdb-les-minifier-node-modules-sqwish.lock
+338 silly lockFile aa73a206-oot-npm-sqwish-0-2-2-package-tgz tar:///root/.npm/sqwish/0.2.2/package.tgz
+339 verbose lock tar:///root/.npm/sqwish/0.2.2/package.tgz /root/.npm/aa73a206-oot-npm-sqwish-0-2-2-package-tgz.lock
+340 verbose tar unpack /root/.npm/fmerge/1.2.0/package.tgz
+341 silly lockFile e546301f-les-minifier-node-modules-fmerge tar:///usr/local/lib/node_modules/minifier/node_modules/fmerge
+342 verbose lock tar:///usr/local/lib/node_modules/minifier/node_modules/fmerge /root/.npm/e546301f-les-minifier-node-modules-fmerge.lock
+343 silly lockFile 739d2e90-oot-npm-fmerge-1-2-0-package-tgz tar:///root/.npm/fmerge/1.2.0/package.tgz
+344 verbose lock tar:///root/.npm/fmerge/1.2.0/package.tgz /root/.npm/739d2e90-oot-npm-fmerge-1-2-0-package-tgz.lock
+345 silly gunzTarPerm modes [ '755', '644' ]
+346 silly gunzTarPerm modes [ '755', '644' ]
+347 silly gunzTarPerm modes [ '755', '644' ]
+348 silly gunzTarPerm extractEntry package.json
+349 silly gunzTarPerm extractEntry package.json
+350 silly gunzTarPerm extractEntry package.json
+351 silly gunzTarPerm extractEntry .npmignore
+352 silly gunzTarPerm extractEntry index.js
+353 silly gunzTarPerm extractEntry .npmignore
+354 silly gunzTarPerm extractEntry README.md
+355 silly gunzTarPerm extractEntry .npmignore
+356 silly gunzTarPerm extractEntry fmerge.min.js
+357 silly gunzTarPerm extractEntry src/parse.js
+358 silly gunzTarPerm extractEntry src/strip-utf8-byte-order.js
+359 silly gunzTarPerm extractEntry index.js
+360 silly gunzTarPerm extractEntry install.js
+361 silly gunzTarPerm extractEntry Makefile
+362 silly gunzTarPerm extractEntry bin/sqwish
+363 silly gunzTarPerm extractEntry readme.md
+364 silly gunzTarPerm extractEntry example/styles.css
+365 silly gunzTarPerm extractEntry example/styles.min.css
+366 silly gunzTarPerm extractEntry src/index.js
+367 silly gunzTarPerm extractEntry tests/tests.js
+368 silly lockFile 475bb69a--node-modules-css-resolve-import tar:///usr/local/lib/node_modules/minifier/node_modules/css-resolve-import
+369 silly lockFile 475bb69a--node-modules-css-resolve-import tar:///usr/local/lib/node_modules/minifier/node_modules/css-resolve-import
+370 silly lockFile 30bf241d-resolve-import-0-1-1-package-tgz tar:///root/.npm/css-resolve-import/0.1.1/package.tgz
+371 silly lockFile 30bf241d-resolve-import-0-1-1-package-tgz tar:///root/.npm/css-resolve-import/0.1.1/package.tgz
+372 info preinstall css-resolve-import@0.1.1
+373 verbose readDependencies using package.json deps
+374 verbose readDependencies using package.json deps
+375 silly resolved []
+376 verbose about to build /usr/local/lib/node_modules/minifier/node_modules/css-resolve-import
+377 info build /usr/local/lib/node_modules/minifier/node_modules/css-resolve-import
+378 verbose linkStuff [ true,
+378 verbose linkStuff   '/usr/local/lib/node_modules',
+378 verbose linkStuff   false,
+378 verbose linkStuff   '/usr/local/lib/node_modules/minifier/node_modules' ]
+379 info linkStuff css-resolve-import@0.1.1
+380 verbose linkBins css-resolve-import@0.1.1
+381 verbose linkMans css-resolve-import@0.1.1
+382 verbose rebuildBundles css-resolve-import@0.1.1
+383 info install css-resolve-import@0.1.1
+384 info postinstall css-resolve-import@0.1.1
+385 silly lockFile e546301f-les-minifier-node-modules-fmerge tar:///usr/local/lib/node_modules/minifier/node_modules/fmerge
+386 silly lockFile e546301f-les-minifier-node-modules-fmerge tar:///usr/local/lib/node_modules/minifier/node_modules/fmerge
+387 silly lockFile 739d2e90-oot-npm-fmerge-1-2-0-package-tgz tar:///root/.npm/fmerge/1.2.0/package.tgz
+388 silly lockFile 739d2e90-oot-npm-fmerge-1-2-0-package-tgz tar:///root/.npm/fmerge/1.2.0/package.tgz
+389 info preinstall fmerge@1.2.0
+390 verbose readDependencies using package.json deps
+391 verbose readDependencies using package.json deps
+392 silly resolved []
+393 verbose about to build /usr/local/lib/node_modules/minifier/node_modules/fmerge
+394 info build /usr/local/lib/node_modules/minifier/node_modules/fmerge
+395 verbose linkStuff [ true,
+395 verbose linkStuff   '/usr/local/lib/node_modules',
+395 verbose linkStuff   false,
+395 verbose linkStuff   '/usr/local/lib/node_modules/minifier/node_modules' ]
+396 info linkStuff fmerge@1.2.0
+397 verbose linkBins fmerge@1.2.0
+398 verbose linkMans fmerge@1.2.0
+399 verbose rebuildBundles fmerge@1.2.0
+400 info install fmerge@1.2.0
+401 verbose unsafe-perm in lifecycle false
+402 silly lockFile 4a2f6fdb-les-minifier-node-modules-sqwish tar:///usr/local/lib/node_modules/minifier/node_modules/sqwish
+403 silly lockFile 4a2f6fdb-les-minifier-node-modules-sqwish tar:///usr/local/lib/node_modules/minifier/node_modules/sqwish
+404 silly lockFile aa73a206-oot-npm-sqwish-0-2-2-package-tgz tar:///root/.npm/sqwish/0.2.2/package.tgz
+405 silly lockFile aa73a206-oot-npm-sqwish-0-2-2-package-tgz tar:///root/.npm/sqwish/0.2.2/package.tgz
+406 info fmerge@1.2.0 Failed to exec install script
+407 verbose lib/node_modules/minifier/node_modules/fmerge unbuild
+408 warn This failure might be due to the use of legacy binary "node"
+409 warn For further explanations, please read
+/usr/share/doc/nodejs/README.Debian
+410 info preuninstall fmerge@1.2.0
+411 info uninstall fmerge@1.2.0
+412 info preinstall sqwish@0.2.2
+413 verbose false,/usr/local/lib/node_modules,/usr/local/lib/node_modules/minifier/node_modules unbuild fmerge@1.2.0
+414 info postuninstall fmerge@1.2.0
+415 verbose readDependencies using package.json deps
+416 verbose readDependencies using package.json deps
+417 silly resolved []
+418 verbose about to build /usr/local/lib/node_modules/minifier/node_modules/sqwish
+419 info build /usr/local/lib/node_modules/minifier/node_modules/sqwish
+420 verbose linkStuff [ true,
+420 verbose linkStuff   '/usr/local/lib/node_modules',
+420 verbose linkStuff   false,
+420 verbose linkStuff   '/usr/local/lib/node_modules/minifier/node_modules' ]
+421 info linkStuff sqwish@0.2.2
+422 verbose linkBins sqwish@0.2.2
+423 verbose link bins [ { sqwish: 'bin/sqwish' },
+423 verbose link bins   '/usr/local/lib/node_modules/minifier/node_modules/.bin',
+423 verbose link bins   false ]
+424 verbose linkMans sqwish@0.2.2
+425 verbose rebuildBundles sqwish@0.2.2
+426 info install sqwish@0.2.2
+427 info postinstall sqwish@0.2.2
+428 verbose about to build /usr/local/lib/node_modules/minifier
+429 verbose lib/node_modules/minifier unbuild
+430 info preuninstall minifier@0.7.1
+431 info uninstall minifier@0.7.1
+432 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild minifier@0.7.1
+433 verbose /usr/local/bin,[object Object] binRoot
+434 info postuninstall minifier@0.7.1
+435 error fmerge@1.2.0 install: `node install.js`
+435 error Exit status 127
+436 error Failed at the fmerge@1.2.0 install script.
+436 error This is most likely a problem with the fmerge package,
+436 error not with npm itself.
+436 error Tell the author that this fails on your system:
+436 error     node install.js
+436 error You can get their info via:
+436 error     npm owner ls fmerge
+436 error There is likely additional logging output above.
+437 error System Linux 3.16.0-4-amd64
+438 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "minifier" "-g"
+439 error cwd /home/sysadmin/cis3750
+440 error node -v v0.10.29
+441 error npm -v 1.4.21
+442 error code ELIFECYCLE
+443 verbose exit [ 1, true ]

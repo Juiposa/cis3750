@@ -1,4 +1,34 @@
 //======================================================================================================================================
+//FUNCTION: signup
+//======================================================================================================================================
+/*PARAMETERS:
+Email - email address, used for login purposes
+password - duh
+Username - display name
+firstName - User's first name
+surName - User's last name
+desiredRole - can be 'admin' or 'part' for administrator and participant respectively
+
+All parameters must be present
+
+RETURNS:
+Nothing
+*/
+function signup(email,password,username,firstName,surName,desiredRole) {
+	qString = "INSERT INTO accountTable (firstName,surName,username,email,role,password) VALUES ('"+firstName+"','"+surName+"','"+username+"','"+email+"','"+desiredRole+"','"+password+"')"; 
+	$.ajax({
+       	method : "POST",
+       	url : 'trickoreat-api/insert.php',
+       	//put your query here
+       	data : { query : qString },
+
+       	success : function() {
+               	console.log("Insert success");
+       	}
+    });
+}
+
+//======================================================================================================================================
 //FUNCTION: authenticate
 //======================================================================================================================================
 /*PARAMETERS:
@@ -51,7 +81,7 @@ RETURNS:
 STRING containing content for a given section
 */
 
-function editContent(type,theContent){
+function getContent(type,theContent){
 	var qString = "";
 
 	qString = "SELECT content FROM webContent WHRERE type='" + type + "'"; 
@@ -395,8 +425,6 @@ RETURN:
 NOTHING
 */
 function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,scheduledDate) {
-
-
 	//depends on values from the html file, using dummy values until you decide how you're going to put data in. 
 	if (eventName==undefined){
 		eventName="Super Happy Fun Time The Sequel"
@@ -409,7 +437,7 @@ function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,schedul
 	}
 
 	insertString="INSERT IGNORE INTO eventTable (eventName,eventLocation,scheduledDate,scheduledTime) VALUES" 
-	valueString= "(\"" +eventName +"\"," + "\"" +eventLocation + "\",\"" + scheduledDate + "\",\"" + scheduledStart + "\",\" + scheduledEnd + "\")"
+	valueString= "(\"" +eventName +"\"," + "\"" +eventLocation + "\",\"" + scheduledDate + "\",\"" + scheduledStart + "\",\"" + scheduledEnd + "\")"
 	queryString=insertString +valueString;
 	console.log ("Creating event string: " + queryString);
 	//POST request
@@ -424,28 +452,24 @@ function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,schedul
 			console.log("Insert success");
 		}
 	});
+}
+
 /* Code for showing all the events so you can see all the details of your event, not sure if usable so just dumped it in*/
-	// checkString="SELECT * FROM eventTable" 
-	// 		var checkJSON = $.ajax({
-	// 			method : "POST",
-	// 			url : 'trickoreat-api/select.php',
+//takes string of event name as argument
+//returns requested event
+function getEvent(eventName)  {
+	checkString="SELECT * FROM eventTable WHERE eventName='" + eventName + "'"; 
+	var checkJSON = $.ajax({
+		method : "POST",
+		url : 'trickoreat-api/select.php',
 
-	// 			//put your query here
-	// 			data : { query : checkString },
+		//put your query here
+		data : { query : checkString },
 
-	// 			datatype : 'json',
-	// 			async : false
-	// 		});
+		datatype : 'json',
+		async : false
+	});
 
-	// 	    var  json= JSON.parse (checkJSON.responseText);
-	// 	    var count=Object.keys(json).length ;
- //   	for (i=0;i< (count); i++){
- //   		eventName= json[i].eventName;
- //   		eventLocation=json[i].eventLocation;
- //   		scheduledTime=json[i].scheduledTime;
- //   		teamCount=json[i].teamCount;
-   		
- //   		console.log ("Event Name: " + eventName + " Location: " +eventLocation + " Time " + scheduledTime + " Team Count " + teamCount);
-
- //   	}
+    var json = JSON.parse (checkJSON.responseText);
+    return json;
 }
