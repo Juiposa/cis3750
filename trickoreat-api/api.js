@@ -394,22 +394,22 @@ scheduledTime - date of event, in format YYYY-MM-DD
 RETURN:
 NOTHING
 */
-function createEvent(eventName,location,scheduledTime) {
+function createEvent(eventName,eventLocation,scheduledTime) {
 
 
 	//depends on values from the html file, using dummy values until you decide how you're going to put data in. 
 	if (eventName==undefined){
 		eventName="Super Happy Fun Time The Sequel"
 	}
-	if (location==undefined){
-		location="Guelph"
+	if (eventLocation==undefined){
+		eventLocation="Guelph"
 	}
 	if (scheduledTime==undefined){
 		scheduledTime="2015-11-12"
 	}
 
-	insertString="INSERT IGNORE INTO eventTable (eventName,location,scheduledTime) VALUES" 
-	valueString= "(\"" +eventName +"\"," + "\"" +location + "\",\"" + scheduledTime + "\")"
+	insertString="INSERT IGNORE INTO eventTable (eventName,eventLocation,scheduledTime) VALUES" 
+	valueString= "(\"" +eventName +"\"," + "\"" +eventLocation + "\",\"" + scheduledTime + "\")"
 	queryString=insertString +valueString;
 	console.log ("Creating event string: " + queryString);
 	//POST request
@@ -424,4 +424,28 @@ function createEvent(eventName,location,scheduledTime) {
 			console.log("Insert success");
 		}
 	});
+/* Code for showing all the events so you can see all the details of your event, not sure if usable so just dumped it in*/
+	// checkString="SELECT * FROM eventTable" 
+	// 		var checkJSON = $.ajax({
+	// 			method : "POST",
+	// 			url : 'trickoreat-api/select.php',
+
+	// 			//put your query here
+	// 			data : { query : checkString },
+
+	// 			datatype : 'json',
+	// 			async : false
+	// 		});
+
+	// 	    var  json= JSON.parse (checkJSON.responseText);
+	// 	    var count=Object.keys(json).length ;
+ //   	for (i=0;i< (count); i++){
+ //   		eventName= json[i].eventName;
+ //   		eventLocation=json[i].eventLocation;
+ //   		scheduledTime=json[i].scheduledTime;
+ //   		teamCount=json[i].teamCount;
+   		
+ //   		console.log ("Event Name: " + eventName + " Location: " +eventLocation + " Time " + scheduledTime + " Team Count " + teamCount);
+
+ //   	}
 }
