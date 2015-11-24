@@ -526,5 +526,7 @@ function searchEvent (eventName){
 
    	}
 
+   	return json;
+
 
 }
