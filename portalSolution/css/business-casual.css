@@ -1,0 +1,338 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*background: url('../img/bg.jpg') no-repeat center center fixed;*/
+    background: #333333;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+#container{
+    position: relative;
+    /*width: 200px;*/
+    height: 200px;
+    top: 125px;
+}
+
+#image{
+    position: absolute;
+    left: 20px;
+    bottom: 275px;
+    width: 30px;
+    height: 30px;
+    z-index:5000;
+}
+
+#navigation{
+	margin: auto;
+    width: 75%;
+    height: 100%;
+    z-index:100;
+    font-size: 1em;
+}
+
+/*.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}*/
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    background: #fea101;
+}
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+footer p {
+    margin: 0;
+    padding: 50px 0;
+}
+
+/* Participants CSS Begins */
+table, th {
+    padding:5px;
+}
+
+th {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+td {
+    padding:3px;
+}
+
+#participants-table {
+    border: 1px solid black;
+}
+
+#participant-table-box-div {
+    min-height: 350px;
+}
+
+.block-one {
+    margin: auto;
+    display: inline-block;
+    width: 90%;
+}
+.block-two {
+    float: right;
+    width: 150px;
+    position: absolute;
+    display: inline-block;
+}
+.block-three {
+    display: inline-block;
+    font-family: "Times New Roman";
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+.block-four {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.create-team-input{
+    display: inline;
+}
+
+.create-team-text{
+    display: inline;
+}
+
+#submit {
+    width:10%;
+    margin: 0 auto;
+}
+
+#create-new-participant {
+    position: absolute;
+    left: 415px;
+    width: 200px;
+}
+
+.create-no-captain {
+    display: block;
+}
+
+.create-show-captain {
+    display: none;
+}
+
+.edit-no-captain {
+    display: none;
+}
+
+.edit-show-captain {
+    display: block;
+}
+
+.news-static {
+    display: block;
+}
+
+.news-edit {
+    display: none;
+}
+.news-no-edit {
+    display: block;
+}
+
+textarea {
+    resize: none;
+}
+
+select {
+    width: 200px;
+    box-sizing: border-box;
+}
+section {
+    padding: 8px;
+    overflow: auto;
+}
+
+section > div {
+    float: left;
+    padding: 4px;
+}
+section > div + div {
+    width: 40px;
+    text-align: center;
+}
+/* Participants CSS Ends */
+
+/* Event CSS Begins */
+#no-events {
+    display: none;
+}
+
+#existing-events {
+    display: block;
+}
+
+.event-details {
+    display: inline-block;
+}
+/* Event CSS Ends */
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fea101;
+    }
+
+    .nav>li>a {
+        padding: 15px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+    
+    .dropdown-menu>li>a {
+    	background: #fea101;
+    }
+    
+    .dropdown-menu {
+    	background: #fea101;
+    }
+    
+    .open {
+    	background: #fea101;
+	}
+	
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

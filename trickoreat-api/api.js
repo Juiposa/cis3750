@@ -1,4 +1,34 @@
 //======================================================================================================================================
+//FUNCTION: signup
+//======================================================================================================================================
+/*PARAMETERS:
+Email - email address, used for login purposes
+password - duh
+Username - display name
+firstName - User's first name
+surName - User's last name
+desiredRole - can be 'admin' or 'part' for administrator and participant respectively
+
+All parameters must be present
+
+RETURNS:
+Nothing
+*/
+function signup(email,password,username,firstName,surName,desiredRole) {
+	qString = "INSERT INTO accountTable (firstName,surName,username,email,role,password) VALUES ('"+firstName+"','"+surName+"','"+username+"','"+email+"','"+desiredRole+"','"+password+"')"; 
+	$.ajax({
+       	method : "POST",
+       	url : 'trickoreat-api/insert.php',
+       	//put your query here
+       	data : { query : qString },
+
+       	success : function() {
+               	console.log("Insert success");
+       	}
+    });
+}
+
+//======================================================================================================================================
 //FUNCTION: authenticate
 //======================================================================================================================================
 /*PARAMETERS:
@@ -443,10 +473,12 @@ function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,schedul
 			console.log("Insert success");
 		}
 	});
-
 }
 
-//Gets every single event in the table and all the data associated with each event.
+/* Code for showing all the events so you can see all the details of your event, not sure if usable so just dumped it in*/
+//takes string of event name as argument
+//returns requested event
+
 
 function getAllEvents (){
 	checkString="SELECT * FROM eventTable" 
@@ -480,6 +512,8 @@ function getAllEvents (){
    		//console.log ("Name: " + eventName + " Location: " +eventLocation + " STime: " + scheduledStart + "End: " + scheduledEnd + "Date: "+ scheduledDate + " TP Count " + teamCount + "/" + participantCount + " ID " + eventID);
 
    	}
+
+   	return json;
 }
 
 function searchEvent (eventName){
