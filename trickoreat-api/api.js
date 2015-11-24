@@ -51,7 +51,7 @@ RETURNS:
 STRING containing content for a given section
 */
 
-function editContent(type,theContent){
+function getContent(type,theContent){
 	var qString = "";
 
 	qString = "SELECT content FROM webContent WHRERE type='" + type + "'"; 
@@ -399,7 +399,7 @@ function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,schedul
 
 	//depends on values from the html file, using dummy values until you decide how you're going to put data in. 
 	if (eventName==undefined){
-		eventName="Super Happy Fun Time The Sequel"
+		eventName="Super Happy Fun Time The Sequel Check"
 	}
 	if (eventLocation==undefined){
 		eventLocation="Guelph"
@@ -424,28 +424,73 @@ function createEvent(eventName,eventLocation,scheduledStart,scheduledEnd,schedul
 			console.log("Insert success");
 		}
 	});
-/* Code for showing all the events so you can see all the details of your event, not sure if usable so just dumped it in*/
-	// checkString="SELECT * FROM eventTable" 
-	// 		var checkJSON = $.ajax({
-	// 			method : "POST",
-	// 			url : 'trickoreat-api/select.php',
 
-	// 			//put your query here
-	// 			data : { query : checkString },
+}
 
-	// 			datatype : 'json',
-	// 			async : false
-	// 		});
+function getAllEvents (){
+	checkString="SELECT * FROM eventTable" 
+	var checkJSON = $.ajax({
+		method : "POST",
+		url : 'trickoreat-api/select.php',
 
-	// 	    var  json= JSON.parse (checkJSON.responseText);
-	// 	    var count=Object.keys(json).length ;
- //   	for (i=0;i< (count); i++){
- //   		eventName= json[i].eventName;
- //   		eventLocation=json[i].eventLocation;
- //   		scheduledTime=json[i].scheduledTime;
- //   		teamCount=json[i].teamCount;
+		//put your query here
+		data : { query : checkString },
+
+		datatype : 'json',
+		async : false
+	});
+
+    var  json= JSON.parse (checkJSON.responseText);
+    var count=Object.keys(json).length ;
+   	for (i=0;i< (count); i++){
+   		eventName= json[i].eventName;
+   		eventLocation=json[i].eventLocation;
+   		scheduledStart=json[i].scheduledStart;
+   		scheduledEnd=json[i].scheduledEnd;
+   		scheduledDate=json[i].scheduledDate;
+   		participantCount=json[i].participantCount;
+   		teamCount=json[i].teamCount;
+   		eventID=json[i].eventID;
+
+   		teamCount=json[i].teamCount;
    		
- //   		console.log ("Event Name: " + eventName + " Location: " +eventLocation + " Time " + scheduledTime + " Team Count " + teamCount);
+   		console.log ("Event Name: " + eventName + " Location: " +eventLocation + " Time " + scheduledStart + " Team Count " + teamCount);
 
- //   	}
+   	}
+}
+
+function searchEvent (eventName){
+
+
+	checkString="SELECT * FROM eventTable WHERE eventName LIKE \"" + "\"" 
+	var checkJSON = $.ajax({
+		method : "POST",
+		url : 'trickoreat-api/select.php',
+
+		//put your query here
+		data : { query : checkString },
+
+		datatype : 'json',
+		async : false
+	});
+
+    var  json= JSON.parse (checkJSON.responseText);
+    var count=Object.keys(json).length ;
+   	for (i=0;i< (count); i++){
+   		eventName= json[i].eventName;
+   		eventLocation=json[i].eventLocation;
+   		scheduledStart=json[i].scheduledStart;
+   		scheduledEnd=json[i].scheduledEnd;
+   		scheduledDate=json[i].scheduledDate;
+   		participantCount=json[i].participantCount;
+   		teamCount=json[i].teamCount;
+   		eventID=json[i].eventID;
+
+   		teamCount=json[i].teamCount;
+   		
+   		console.log ("Event Name: " + eventName + " Location: " +eventLocation + " Time " + scheduledStart + " Team Count " + teamCount);
+
+   	}
+
+
 }
