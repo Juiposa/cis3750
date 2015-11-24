@@ -1,51 +1,32 @@
 
 //checks given username matchs the password
 function authenticate(username, password) {
-	
+
 	var jqXHR = $.ajax({
 		method : "POST",
 		url : 'trickoreat-api/select.php',
 
 		//put your query here
-		data : { query : "SELECT password FROM accountTable WHERE email=" + username },
+		data : { query : "SELECT password FROM accountTable WHERE email='" + username + "'"},
 
 		datatype : 'json',
 		async : false
 	});
-}
+	var json = JSON.parse(jqXHR.responseText);
 
-function testSelect() {
-	//dicks in ass
-	//POST request
-	var jqXHR = $.ajax({
-		method : "POST",
-		url : 'trickoreat-api/select.php',
-
-		//put your query here
-		data : { query : "SELECT * FROM fuckthisshit" },
-
-		datatype : 'json',
-		async : false
-	});
-
-	//return values (processed or un-processed) to caller here
-	console.log(jqXHR.responseText);
-}
-
-function testInsert() {
-
-	//POST request
-	$.ajax({
-		method : "POST",
-		url : 'trickoreat-api/insert.php',
-
-		//put your query here
-		data : { query : "INSERT INTO fuckthisshit (asshole) VALUES ('shit')" },
-
-		success : function() {
-			console.log("Insert success");
+	if( json == null ) {
+		console.log("User not found")
+		return false;
+	} else {
+		if( password == json[0].password ) {
+			console.log("Login successful");
+			return true;
+		} else {
+			console.log("Passwords do not match");
+			return false;
 		}
-	});
+	}
+
 }
 
-testSelect();
+authenticate("meal@exchange.ca", "password");
